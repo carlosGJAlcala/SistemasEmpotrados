@@ -1,0 +1,10 @@
+17:21:50 **** Incremental Build of configuration Debug for project prac2b ****
+Info: Internal Builder is used for build
+sparc-elf-gcc -I/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac2b/include -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -o src/leon3_uart.o ../src/leon3_uart.c 
+../src/leon3_uart.c:19: warning: initialization makes pointer from integer without a cast
+../src/leon3_uart.c: In function 'leon3_putchar':
+../src/leon3_uart.c:27: error: expected ')' before '{' token
+../src/leon3_uart.c:36: error: expected expression before '}' token
+
+17:21:50 Build Finished (took 161ms)
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;prac2/include/leon3_uartl.h&apos; to &apos;leon3_uart.h&apos;" description="Rename resource &apos;leon3_uartl.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="include/leon3_uartl.h" name="leon3_uart.h" stamp="1676032209226" updateReferences="true"/>
+</session>
