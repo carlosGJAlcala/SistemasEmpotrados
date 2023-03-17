@@ -24,7 +24,7 @@ int8_t leon3_putchar(char c) {
 
 	uint32_t write_timeout = 0;
 
-	while (leon3_UART_TF_IS_FULL() && (write_timeout < 0xAAAAA)) {
+	while ((leon3_UART_TF_IS_FULL() && (write_timeout < 0xAAAAA)) {
 		write_timeout++;
 
 	} //Espera mientras la cola de transmisión esté llena
