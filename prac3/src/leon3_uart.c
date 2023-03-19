@@ -13,7 +13,7 @@ struct UART_regs {
 };
 
 //! LEON3 UART A Transmit FIFO is FULL
-#define LEON3_UART_TFF 256
+#define LEON3_UART_TFF 512
 //! LEON3 UART A Transmit FIFO is EMPTY
 #define LEON3_UART_TFE 4
 struct UART_regs * const pLEON3_UART_REGS = 0x80000100;

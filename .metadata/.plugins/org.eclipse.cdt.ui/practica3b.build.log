@@ -1,0 +1,19 @@
+17:54:18 **** Incremental Build of configuration Release for project practica3b ****
+Info: Internal Builder is used for build
+sparc-elf-gcc -O3 -Wall -msoft-float -c -fmessage-length=0 -o src/leon3_uart.o ../src/leon3_uart.c 
+../src/leon3_uart.c:1:24: error: leon3_uart.h: No such file or directory
+../src/leon3_uart.c:6: error: expected ':', ',', ';', '}' or '__attribute__' before 'Data'
+../src/leon3_uart.c:40: warning: initialization makes pointer from integer without a cast
+../src/leon3_uart.c:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'leon3_putchar'
+../src/leon3_uart.c:58: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'leon3_uart_tx_fifo_is_empty'
+../src/leon3_uart.c: In function 'leon3_getchar':
+../src/leon3_uart.c:68: error: 'struct UART_regs' has no member named 'Data'
+../src/leon3_uart.c: In function 'leon3_uart_ctrl_rx_enable':
+../src/leon3_uart.c:77: error: 'struct UART_regs' has no member named 'Ctrl'
+../src/leon3_uart.c: In function 'leon3_uart_ctrl_rx_irq_enable':
+../src/leon3_uart.c:88: error: 'struct UART_regs' has no member named 'Ctrl'
+../src/leon3_uart.c: At top level:
+../src/leon3_uart.c:91: error: expected ')' before 'set_rxtxloop'
+
+17:54:18 Build Finished (took 111ms)
+

@@ -1,13 +1,20 @@
-18:53:13 **** Incremental Build of configuration Debug for project prac2 ****
+18:04:11 **** Incremental Build of configuration Debug for project prac3b ****
 Info: Internal Builder is used for build
-sparc-elf-gcc -I/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac2/include -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -o src/main.o ../src/main.c 
+sparc-elf-gcc -I/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac3b/include -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -o src/main.o ../src/main.c 
 ../src/main.c: In function 'main':
-../src/main.c:11: warning: implicit declaration of function 'printf'
-../src/main.c:11: warning: incompatible implicit declaration of built-in function 'printf'
-../src/main.c:11: warning: passing argument 1 of 'printf' makes pointer from integer without a cast
-../src/main.c:11: note: expected 'const char *' but argument is of type 'char'
-sparc-elf-gcc -I/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac2/include -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -o src/leon3_uart.o ../src/leon3_uart.c 
-../src/leon3_uart.c:19: warning: initialization makes pointer from integer without a cast
-sparc-elf-gcc -msoft-float -o prac2 src/main_p2.o src/main.o src/leon3_uart.o 
-Info: Nothing to build for prac2
-Info: Nothing to build for prac2
+../src/main.c:30: warning: implicit declaration of function 'leon3_install_handler'
+../src/main.c:41: warning: implicit declaration of function 'leon3_UART_ConfigRXTXLoop'
+../src/main.c:44: warning: implicit declaration of function 'leon3_UART_RX_IRQ_ENABLE'
+../src/main.c:47: warning: implicit declaration of function 'leon3_UART_RX_ENABLE'
+../src/main.c:73: warning: implicit declaration of function 'leon3_UART_TF_IS_EMPTY'
+sparc-elf-gcc -msoft-float -o prac3b src/main.o src/leon3_uart.o src/leon3_hw_irqs.o src/leon3_ev_handling_asm.o src/leon3_ev_handling.o src/leon3_bprint.o 
+src/main.o: In function `main':
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac3b/Debug/../src/main.c:30: undefined reference to `leon3_install_handler'
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac3b/Debug/../src/main.c:31: undefined reference to `leon3_install_handler'
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac3b/Debug/../src/main.c:37: undefined reference to `leon3_install_handler'
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac3b/Debug/../src/main.c:41: undefined reference to `leon3_UART_ConfigRXTXLoop'
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac3b/Debug/../src/main.c:44: undefined reference to `leon3_UART_RX_IRQ_ENABLE'
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac3b/Debug/../src/main.c:47: undefined reference to `leon3_UART_RX_ENABLE'
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac3b/Debug/../src/main.c:64: undefined reference to `leon3_UART_ConfigRXTXLoop'
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac3b/Debug/../src/main.c:73: undefined reference to `leon3_UART_TF_IS_EMPTY'
+collect2: ld returned 1 exit status

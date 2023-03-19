@@ -23,8 +23,8 @@
 							<tool id="cdt.managedbuild.tool.bcc.c.compiler.exe.debug.1889050287" name="SPARC Bare C Compiler" superClass="cdt.managedbuild.tool.bcc.c.compiler.exe.debug">
 								<option defaultValue="bcc.c.optimization.level.none" id="bcc.c.compiler.exe.debug.option.optimization.level.2035431219" name="Optimization Level" superClass="bcc.c.compiler.exe.debug.option.optimization.level" valueType="enumerated"/>
 								<option id="bcc.c.compiler.exe.debug.option.debugging.level.813293394" name="Debug Level" superClass="bcc.c.compiler.exe.debug.option.debugging.level" value="bcc.c.debugging.level.max" valueType="enumerated"/>
-								<option id="bcc.c.compiler.option.include.paths.1446679530" superClass="bcc.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/prac3/include}&quot;"/>
+								<option id="bcc.c.compiler.option.include.paths.1446679530" name="Include paths (-I)" superClass="bcc.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/prac3b/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.c.1901413740" superClass="cdt.managedbuild.tool.base.c.compiler.input.c"/>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.asm.1354623898" superClass="cdt.managedbuild.tool.base.c.compiler.input.asm"/>
