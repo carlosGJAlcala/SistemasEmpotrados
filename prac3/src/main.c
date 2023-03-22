@@ -16,21 +16,29 @@ int main() {
 	//Instalar el manejador del trap que 0x84 la rutina
 	// que deshabilita las interrupciones
 	leon3_set_trap_handler(0x84, leon3_trap_handler_disable_irqs);
-
+	
 	//Llamada al sistema para deshabilitar las interrupciones
 	leon3_sys_call_disable_irqs();
 //COMPLETAR
 //
 //
 //Enmascarar todas las interrupciones
+	
+	//Deshabilitar las interrupciones
+	leon3_sys_call_disable_irqs();
+	
 	leon3_mask_all_irqs();
+	
 	//Instalar la función device_hw_irq_level_1_handler como
 	// manejador de usuario de la interrupción de nivel 1
 	leon3_install_user_hw_irq_handler(1, device_hw_irq_level_1_handler);
+
 	//Desenmascarar la interrupción de nivel 1
 	leon3_unmask_irq(0x01);
+	
 	//Llamada al sistema para habilitar las interrupciones
 	leon3_sys_call_enable_irqs();
+	
 	//Fuerza la interrupción
 	//leon3_mask_irq(1);
 	leon3_force_irq(0x01);
