@@ -21,7 +21,7 @@ struct UART_regs {
 struct UART_regs * const pLEON3_UART_REGS = 0x80000100;
 
 //#define leon3_UART_TF_IS_FULL()((((pLEON3_UART_REGS->Status )& LEON3_UART_TFF )!=0)? 1 :0)
-#define leon3_UART_TF_IS_FULL() (LEON3_UART_TFF&pLEON3_UART_REGS->Status) // con esto es suficiente
+#define leon3_UART_TF_IS_FULL() (LEON3_UART_TFF&pLEON3_UART_REGS->Status) // lo tuyo funciona pero con esto es suficiente
 
 int8_t leon3_putchar(char c) {
 
