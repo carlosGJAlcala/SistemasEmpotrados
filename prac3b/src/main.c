@@ -20,6 +20,7 @@ void uart_rx_irq_handler(void) {
 	irq_counter++;
 }
 int main() {
+
 	uint8_t i;
 	//Instalar como manejador del trap 0x83 la rutina
 	// que habilita las interrupciones
@@ -33,7 +34,7 @@ int main() {
 //COMPLETAR instalando como manejador de la interrupción de
 	//nivel 2 la rutina uart_rx_irq_handler siguiendo el mismo
 	//patrón de la prac3a
-	leon3_install_user_hw_irq_handler(2,uart_rx_irq_handler);
+	leon3_install_user_hw_irq_handler(0x12,uart_rx_irq_handler);
 //FIN COMPLETAR
 
 	//Habilito loop-back
@@ -47,9 +48,9 @@ int main() {
 
 	//COMPLETAR habilitando las interrupciones y
 	//desenmascarando la interrupción de nivel 2
-	leon3_sys_call_enable_irqs();
-	leon3_unmask_irq(2);
 
+	leon3_unmask_irq(2);
+	leon3_sys_call_enable_irqs();
 	//FIN COMPLETAR
 	leon3_putchar('A');
 	//Sondeo si los 8 caracteres se han recibido

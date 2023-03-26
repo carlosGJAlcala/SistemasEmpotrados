@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-<instance id="cdt.managedbuild.config.bcc.exe.debug.1484182217;cdt.managedbuild.config.bcc.exe.debug.1484182217.;cdt.managedbuild.tool.bcc.c.compiler.exe.debug.1889050287;cdt.managedbuild.tool.base.c.compiler.input.asm.1354623898">
+<instance id="cdt.managedbuild.config.bcc.exe.debug.1484182217;cdt.managedbuild.config.bcc.exe.debug.1484182217.;cdt.managedbuild.tool.bcc.c.compiler.exe.debug.1889050287;cdt.managedbuild.tool.base.c.compiler.input.c.1901413740">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 <includePath path="/usr/local/include"/>
@@ -375,7 +375,7 @@
 <definedSymbol symbol="__STDC_ISO_10646__=201706L"/>
 </collector>
 </instance>
-<instance id="cdt.managedbuild.config.bcc.exe.debug.1484182217;cdt.managedbuild.config.bcc.exe.debug.1484182217.;cdt.managedbuild.tool.bcc.c.compiler.exe.debug.1889050287;cdt.managedbuild.tool.base.c.compiler.input.c.1901413740">
+<instance id="cdt.managedbuild.config.bcc.exe.debug.1484182217;cdt.managedbuild.config.bcc.exe.debug.1484182217.;cdt.managedbuild.tool.bcc.c.compiler.exe.debug.1889050287;cdt.managedbuild.tool.base.c.compiler.input.asm.1354623898">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 <includePath path="/usr/local/include"/>

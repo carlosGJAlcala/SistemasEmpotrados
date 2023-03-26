@@ -1,5 +1,10 @@
 #include "leon3_uart.h"
 #include "leon3_bprint.h"
+/*
+ La práctica además plantea un ejercicio relacionado
+ con la implementación de rutinas auxiliaries empleadas en funciones de formateo y
+ redirección de la información hacia un dispositivo de salida (tipo printf).
+ */
 int main() {
 	char * pchar = "cadena\n";
 	leon3_print_string(pchar);

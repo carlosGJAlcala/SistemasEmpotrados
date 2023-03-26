@@ -13,7 +13,7 @@ struct UART_regs {
 };
 
 //! LEON3 UART A Transmit FIFO is FULL
-#define LEON3_UART_TFF 512  // Yo lo veo mejor en hexadecimal 0x200
+#define LEON3_UART_TFF 0x200  // Yo lo veo mejor en hexadecimal 0x200
 
 //! LEON3 UART A Transmit FIFO is EMPTY
 #define LEON3_UART_TFE 4
@@ -39,8 +39,7 @@ int8_t leon3_putchar(char c) {
 }
 int8_t leon3_uart_tx_fifo_is_empty() {
 	//COMPLETAR
-
 	//int8_t resultado =((((pLEON3_UART_REGS->Status )& LEON3_UART_TFE )!=0)? 1 :0);
-	int8_t resultado = (LEON3_UART_TFE&pLEON3_UART_REGS->Status);
+	int8_t resultado = (LEON3_UART_TFE & pLEON3_UART_REGS->Status);
 	return resultado;
 }
