@@ -10927,3 +10927,41 @@ Binding(ALT+SHIFT+R,
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-03-26 22:53:15.796
 !MESSAGE Indexed 'Practica3B' (5 sources, 6 headers) in 0,04 sec: 137 declarations; 270 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-03-26 23:47:07.223
+!MESSAGE Indexed 'prac3b' (5 sources, 6 headers) in 0,06 sec: 147 declarations; 301 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-03-26 23:47:35.943
+!MESSAGE Indexed 'prac3b' (5 sources, 6 headers) in 0,05 sec: 147 declarations; 301 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-03-26 23:48:22.474
+!MESSAGE Indexed 'prac3b' (5 sources, 6 headers) in 0,03 sec: 147 declarations; 301 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2023-03-26 23:49:36.437
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-exec-run
+Error message from debugger back end:
+Durante el arranque el programa salió con el código 126.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:115)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:234)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:107)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:95)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.Exception: Durante el arranque el programa salió con el código 126.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:925)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:754)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-03-26 23:49:36.439
+!MESSAGE Failed to execute MI command:
+-exec-run
+Error message from debugger back end:
+Durante el arranque el programa salió con el código 126.
+!STACK 0
+java.lang.Exception: Durante el arranque el programa salió con el código 126.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:925)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:754)

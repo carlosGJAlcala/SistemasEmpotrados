@@ -24,7 +24,7 @@
 								<option defaultValue="bcc.c.optimization.level.none" id="bcc.c.compiler.exe.debug.option.optimization.level.2035431219" name="Optimization Level" superClass="bcc.c.compiler.exe.debug.option.optimization.level" valueType="enumerated"/>
 								<option id="bcc.c.compiler.exe.debug.option.debugging.level.813293394" name="Debug Level" superClass="bcc.c.compiler.exe.debug.option.debugging.level" value="bcc.c.debugging.level.max" valueType="enumerated"/>
 								<option id="bcc.c.compiler.option.include.paths.1446679530" name="Include paths (-I)" superClass="bcc.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/prac3/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/prac3b}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.c.1901413740" superClass="cdt.managedbuild.tool.base.c.compiler.input.c"/>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.asm.1354623898" superClass="cdt.managedbuild.tool.base.c.compiler.input.asm"/>
@@ -41,10 +41,11 @@
 					</folderInfo>
 					<folderInfo id="cdt.managedbuild.config.bcc.exe.debug.1484182217.943295481" name="/" resourcePath="src">
 						<toolChain id="cdt.managedbuild.toolchain.bcc.exe.debug.281287193" name="SPARC Bare C" superClass="cdt.managedbuild.toolchain.bcc.exe.debug" unusedChildren="">
+							<targetPlatform id="cdt.managedbuild.target.bcc.platform.exe.debug" name="Debug Platform" superClass="cdt.managedbuild.target.bcc.platform.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.bcc.cpp.compiler.exe.debug.1852764305" name="SPARC Bare C++ Compiler" superClass="cdt.managedbuild.tool.bcc.cpp.compiler.exe.debug.2084794832"/>
 							<tool id="cdt.managedbuild.tool.bcc.c.compiler.exe.debug.1141934999" name="SPARC Bare C Compiler" superClass="cdt.managedbuild.tool.bcc.c.compiler.exe.debug.1889050287">
-								<option id="bcc.c.compiler.option.include.paths.559519169" superClass="bcc.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Practica3B/include}&quot;"/>
+								<option id="bcc.c.compiler.option.include.paths.559519169" name="Include paths (-I)" superClass="bcc.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/prac3b/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.c.890796576" superClass="cdt.managedbuild.tool.base.c.compiler.input.c"/>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.asm.1145366135" superClass="cdt.managedbuild.tool.base.c.compiler.input.asm"/>
@@ -72,14 +73,14 @@
 					<folderInfo id="cdt.managedbuild.config.bcc.exe.release.638431778." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.bcc.exe.release.1085186770" name="SPARC Bare C" superClass="cdt.managedbuild.toolchain.bcc.exe.release">
 							<targetPlatform id="cdt.managedbuild.target.bcc.platform.exe.release.169449580" name="Debug Platform" superClass="cdt.managedbuild.target.bcc.platform.exe.release"/>
-							<builder buildPath="${workspace_loc:/prac3}/Release" id="cdt.managedbuild.target.bcc.builder.exe.release.1790036297" managedBuildOn="true" name="BCC Make.Release" superClass="cdt.managedbuild.target.bcc.builder.exe.release"/>
+							<builder buildPath="${workspace_loc:/prac3}/Release" id="cdt.managedbuild.target.bcc.builder.exe.release.1790036297" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="BCC Make" superClass="cdt.managedbuild.target.bcc.builder.exe.release"/>
 							<tool id="cdt.managedbuild.tool.bcc.cpp.compiler.exe.release.1125711020" name="SPARC Bare C++ Compiler" superClass="cdt.managedbuild.tool.bcc.cpp.compiler.exe.release">
-								<option id="bcc.cpp.compiler.exe.release.option.optimization.level.1386543110" superClass="bcc.cpp.compiler.exe.release.option.optimization.level" value="bcc.cpp.compiler.optimization.level.most" valueType="enumerated"/>
-								<option id="bcc.cpp.compiler.exe.release.option.debugging.level.376228566" superClass="bcc.cpp.compiler.exe.release.option.debugging.level" value="bcc.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="bcc.cpp.compiler.exe.release.option.optimization.level.1386543110" name="Optimization Level" superClass="bcc.cpp.compiler.exe.release.option.optimization.level" value="bcc.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="bcc.cpp.compiler.exe.release.option.debugging.level.376228566" name="Debug Level" superClass="bcc.cpp.compiler.exe.release.option.debugging.level" value="bcc.cpp.compiler.debugging.level.none" valueType="enumerated"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.bcc.c.compiler.exe.release.2130459047" name="SPARC Bare C Compiler" superClass="cdt.managedbuild.tool.bcc.c.compiler.exe.release">
-								<option defaultValue="bcc.c.optimization.level.most" id="bcc.c.compiler.exe.release.option.optimization.level.130002479" superClass="bcc.c.compiler.exe.release.option.optimization.level" valueType="enumerated"/>
-								<option id="bcc.c.compiler.exe.release.option.debugging.level.1903064748" superClass="bcc.c.compiler.exe.release.option.debugging.level" value="bcc.c.debugging.level.none" valueType="enumerated"/>
+								<option defaultValue="bcc.c.optimization.level.most" id="bcc.c.compiler.exe.release.option.optimization.level.130002479" name="Optimization Level" superClass="bcc.c.compiler.exe.release.option.optimization.level" valueType="enumerated"/>
+								<option id="bcc.c.compiler.exe.release.option.debugging.level.1903064748" name="Debug Level" superClass="bcc.c.compiler.exe.release.option.debugging.level" value="bcc.c.debugging.level.none" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.c.1384403750" superClass="cdt.managedbuild.tool.base.c.compiler.input.c"/>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.asm.1459203230" superClass="cdt.managedbuild.tool.base.c.compiler.input.asm"/>
 							</tool>
