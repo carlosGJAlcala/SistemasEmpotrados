@@ -1,6 +1,1 @@
-23:30:23 **** Incremental Build of configuration Debug for project Practica3B ****
-Info: Internal Builder is used for build
-sparc-elf-gcc -I/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/Practica3B/include -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -o src/main.o ../src/main.c 
-sparc-elf-gcc -msoft-float -o Practica3B src/main.o src/leon3_uart.o src/leon3_hw_irqs.o src/leon3_ev_handling_asm.o src/leon3_ev_handling.o src/leon3_bprint.o 
-Info: Nothing to build for Practica3B
 Info: Nothing to build for Practica3B

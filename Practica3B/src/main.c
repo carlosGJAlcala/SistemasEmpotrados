@@ -2,12 +2,6 @@
 #include "leon3_bprint.h"
 #include "leon3_hw_irqs.h"
 #include "leon3_ev_handling.h"
-void device_hw_irq_level_1_handler(void) {
-	leon3_print_string("Device HW IRQ user handler \n");
-}
-void device_trap_handler(void) {
-	leon3_print_string("error division por cero");
-}
 uint8_t irq_counter = 0;
 char RxChars[8];
 void uart_rx_irq_handler(void) {
