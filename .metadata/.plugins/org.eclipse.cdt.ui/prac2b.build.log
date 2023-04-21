@@ -1,1 +1,5 @@
-Info: Nothing to build for prac2b
+13:40:08 **** Clean-only build of configuration Debug for project prac2b ****
+rm -rf src/leon3_bprint.d src/main.d src/leon3_uart.o src/leon3_bprint.o src/leon3_uart.d prac2b src/main.o 
+
+13:40:08 Build Finished (took 112ms)
+
