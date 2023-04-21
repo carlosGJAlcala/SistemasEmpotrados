@@ -115,7 +115,9 @@ uint8_t leon3_timer_config(uint8_t timerId, uint32_t timerValue,
 			pLEON3_TimerUnit_REGS->Timer[timerId].Ctrl|=LEON3_TIMER_CHAIN_WITH_PREC_TIMER;
 
 		}
-
+		else {
+			pLEON3_TimerUnit_REGS->Timer[timerId].Ctrl&=(~LEON3_TIMER_CHAIN_WITH_PREC_TIMER);
+		}
 
 		//TODO
 		//Configura el campo Restart del timerId (sin cambiar el resto de campos de Ctrl) que determina si debe reiniciarse el timer tras el underflow
@@ -124,10 +126,15 @@ uint8_t leon3_timer_config(uint8_t timerId, uint32_t timerValue,
 			pLEON3_TimerUnit_REGS->Timer[timerId].Ctrl|=LEON3_TIMER_RESTART;
 
 		}
+		else{
+
+			pLEON3_TimerUnit_REGS->Timer[timerId].Ctrl&=(~LEON3_TIMER_RESTART);
+		}		
 
 		// Fuerza la carga en CounterValue del timerId con el valor escrito en el registro ReloadValue
-		pLEON3_TimerUnit_REGS->Timer[timerId].CounterValue= pLEON3_TimerUnit_REGS->Timer[timerId].ReloadValue;
+		// pLEON3_TimerUnit_REGS->Timer[timerId].CounterValue= pLEON3_TimerUnit_REGS->Timer[timerId].ReloadValue;
 		// Force CounterValue of the timerId is loaded with the value of ReloadValue register
+		pLEON3_TimerUnit_REGS->Timer[timerId].ReloadValue=timerValue;  // Si no cargamos el ReloadValue no hay nada que recargar
 		pLEON3_TimerUnit_REGS->Timer[timerId].Ctrl |= LEON3_TIMER_LOAD_TIMER;
 
 	} else
