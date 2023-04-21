@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="leon3_install_hwirq_handler" key="selection"/>
+		<item value="leon3_timer_config" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="leon3_timer_config"/>
 			<item value="leon3_install_hwirq_handler"/>
 			<item value="leon3_clear_irq"/>
 			<item value="leon3_force_irq"/>
@@ -15,7 +16,6 @@
 			<item value="leon3_mask_irq"/>
 			<item value="leon3_unmask_all_irqs"/>
 			<item value="leon3_mask_all_irqs"/>
-			<item value="leon3_set_trap_handler"/>
 		</list>
 		<list key="replacehistory">
 		</list>
