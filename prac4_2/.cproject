@@ -45,7 +45,7 @@
 							<tool id="cdt.managedbuild.tool.bcc.cpp.compiler.exe.debug.1852764305" name="SPARC Bare C++ Compiler" superClass="cdt.managedbuild.tool.bcc.cpp.compiler.exe.debug.2084794832"/>
 							<tool id="cdt.managedbuild.tool.bcc.c.compiler.exe.debug.1141934999" name="SPARC Bare C Compiler" superClass="cdt.managedbuild.tool.bcc.c.compiler.exe.debug.1889050287">
 								<option id="bcc.c.compiler.option.include.paths.559519169" name="Include paths (-I)" superClass="bcc.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/prac4_1/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/prac4_2/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.c.890796576" superClass="cdt.managedbuild.tool.base.c.compiler.input.c"/>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.asm.1145366135" superClass="cdt.managedbuild.tool.base.c.compiler.input.asm"/>
@@ -57,7 +57,7 @@
 					</folderInfo>
 					<fileInfo id="cdt.managedbuild.config.bcc.exe.debug.1484182217.1750531558" name="main.c" rcbsApplicability="disable" resourcePath="src/main.c" toolsToInvoke="cdt.managedbuild.tool.bcc.c.compiler.exe.debug.1141934999.2067262172">
 						<tool id="cdt.managedbuild.tool.bcc.c.compiler.exe.debug.1141934999.2067262172" name="SPARC Bare C Compiler" superClass="cdt.managedbuild.tool.bcc.c.compiler.exe.debug.1141934999">
-							<option id="bcc.c.compiler.option.include.paths.141616396" superClass="bcc.c.compiler.option.include.paths" valueType="includePath">
+							<option id="bcc.c.compiler.option.include.paths.141616396" name="Include paths (-I)" superClass="bcc.c.compiler.option.include.paths" valueType="includePath">
 								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/prac4_2/include}&quot;"/>
 							</option>
 							<inputType id="cdt.managedbuild.tool.base.c.compiler.input.c.1773556622" superClass="cdt.managedbuild.tool.base.c.compiler.input.c"/>
