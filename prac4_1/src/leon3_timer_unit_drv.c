@@ -114,7 +114,7 @@ uint8_t leon3_timer_config(uint8_t timerId, uint32_t timerValue,
 		if(chain_with_prec_timer){
 			pLEON3_TimerUnit_REGS->Timer[timerId].Ctrl|=LEON3_TIMER_CHAIN_WITH_PREC_TIMER;
 
-		}
+		} // NO SE BORRABA en caso de quechain_with_prec_timer sea false
 		else {
 			pLEON3_TimerUnit_REGS->Timer[timerId].Ctrl&=(~LEON3_TIMER_CHAIN_WITH_PREC_TIMER);
 		}
@@ -125,7 +125,7 @@ uint8_t leon3_timer_config(uint8_t timerId, uint32_t timerValue,
 		if(restart_timer){
 			pLEON3_TimerUnit_REGS->Timer[timerId].Ctrl|=LEON3_TIMER_RESTART;
 
-		}
+		}  
 		else{
 
 			pLEON3_TimerUnit_REGS->Timer[timerId].Ctrl&=(~LEON3_TIMER_RESTART);
