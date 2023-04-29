@@ -219,6 +219,10 @@ rtems_task TAvoidObstacles(rtems_task_argument unused) {
 	status = rtems_task_ident( RTEMS_SELF, RTEMS_SEARCH_ALL_NODES, &tid);
 
 	task_index = rtems_get_index(tid) - 1;
+
+	rtems_interval ticks;
+	ticks = get_ticks_since_boot();
+	
 	for (;;) {
 		status = rtems_clock_get(RTEMS_CLOCK_GET_TOD, &time);
 		if (time.second >= 3335) {
@@ -229,10 +233,13 @@ rtems_task TAvoidObstacles(rtems_task_argument unused) {
 		put_name(Task_name[task_index], FALSE);
 
 
-		status = task_delay_until(get_ticks_since_boot()+ 10);
+		//status = task_delay_until(get_ticks_since_boot()+ 10);
 
 		puts("T1 Do Avoid Obstacles");
 		printf(" - rtems_ticks_since_boot - %i\n\n", get_ticks_since_boot());
+		
+		ticks+=10;
+		status=task_delay_until(ticks);  // Así en todas las tareas, primero procesar y luego planificar
 	}
 
 }
