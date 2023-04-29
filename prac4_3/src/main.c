@@ -33,7 +33,8 @@ void TCalculatePath(void) {
 }
 
 // Definición de las macros de configuración
-#define CYClIC_EXECUTIVE_PERIOD_IN_TICKS 10
+//#define CYClIC_EXECUTIVE_PERIOD_IN_TICKS 10
+#define CYClIC_EXECUTIVE_PERIOD_IN_TICKS 100
 #define CYClIC_EXECUTIVE_HYPER_PERIOD 3
 #define CYClIC_EXECUTIVE_TASKS_NUMBER 4
 // Array bidimensional para definir la secuencia de tareas del ejecutivo cíclico
