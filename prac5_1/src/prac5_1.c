@@ -229,10 +229,12 @@ rtems_task TAvoidObstacles(rtems_task_argument unused) {
 		put_name(Task_name[task_index], FALSE);
 
 
-		status = rtems_task_wake_after(get_ticks_per_second() + 10);
+		//status = rtems_task_wake_after(get_ticks_per_second() + 10);
 
 		puts("T1 Do Avoid Obstacles");
 		printf(" - rtems_ticks_since_boot - %i\n\n", get_ticks_since_boot());
+		
+		status=rtems_task_wake_after(10);  // Así en todas las tareas, procesamos y esperamos
 	}
 
 }
