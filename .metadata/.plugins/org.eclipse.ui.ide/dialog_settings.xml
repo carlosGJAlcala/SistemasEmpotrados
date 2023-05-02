@@ -7,6 +7,20 @@
 		<item value="716" key="DIALOG_X_ORIGIN"/>
 		<item value="354" key="DIALOG_Y_ORIGIN"/>
 	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="/home/carlos/Descargas/prac6_1_eclipse_project.zip"/>
+			<item value="/home/carlos/Descargas/edroom_ej2_eclipse_project.zip"/>
+			<item value="/home/carlos/Escritorio/edroom_ej1_eclipse_project.zip"/>
+			<item value="/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/edroom_ej1_eclipse_project.zip"/>
+		</list>
+	</section>
 	<section name="NewWizardAction">
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">

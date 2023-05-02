@@ -1,0 +1,66 @@
+00:28:56 **** Incremental Build of configuration Debug for project edroom_ej1_project ****
+make all 
+Building file: ../edroomsl_types_swr/src/edroomsl_types.cpp
+Invoking: SPARC RTEMS C++ Compiler
+sparc-rtems-g++ -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -MMD -MP -MF"edroomsl_types_swr/src/edroomsl_types.d" -MT"edroomsl_types_swr/src/edroomsl_types.d" -o "edroomsl_types_swr/src/edroomsl_types.o" "../edroomsl_types_swr/src/edroomsl_types.cpp"
+../edroomsl_types_swr/src/edroomsl_types.cpp:1:35: warning: public/edroomsl_types.h: No such file or directory
+../edroomsl_types_swr/src/edroomsl_types.cpp:4: `TEDROOMUInt64' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:4: `input' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:4: `TEDROOMUInt64' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:4: `output' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:5: variable or field `TEDROOMUInt64_Serialize' declared void
+../edroomsl_types_swr/src/edroomsl_types.cpp:5: initializer list being treated as compound expression
+../edroomsl_types_swr/src/edroomsl_types.cpp:5: syntax error before `{' token
+../edroomsl_types_swr/src/edroomsl_types.cpp:9: `TEDROOMUInt64' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:9: `input' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:9: `TEDROOMUInt64' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:9: `output' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:10: variable or field `TEDROOMUInt64_Deserialize' declared void
+../edroomsl_types_swr/src/edroomsl_types.cpp:10: initializer list being treated as compound expression
+../edroomsl_types_swr/src/edroomsl_types.cpp:10: syntax error before `{' token
+../edroomsl_types_swr/src/edroomsl_types.cpp:14: `TEDROOMUInt32' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:14: `input' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:14: `TEDROOMUInt32' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:14: `output' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:15: variable or field `TEDROOMUInt32_Serialize' declared void
+../edroomsl_types_swr/src/edroomsl_types.cpp:15: initializer list being treated as compound expression
+../edroomsl_types_swr/src/edroomsl_types.cpp:15: syntax error before `{' token
+../edroomsl_types_swr/src/edroomsl_types.cpp:74: `TEDROOMUInt32' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:74: `input' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:74: `TEDROOMUInt32' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:74: `output' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:75: variable or field `TEDROOMUInt32_Deserialize' declared void
+../edroomsl_types_swr/src/edroomsl_types.cpp:75: initializer list being treated as compound expression
+../edroomsl_types_swr/src/edroomsl_types.cpp:75: syntax error before `{' token
+../edroomsl_types_swr/src/edroomsl_types.cpp:79: `TEDROOMUInt16' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:79: `input' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:79: `TEDROOMUInt16' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:79: `output' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:80: variable or field `TEDROOMUInt16_Serialize' declared void
+../edroomsl_types_swr/src/edroomsl_types.cpp:80: initializer list being treated as compound expression
+../edroomsl_types_swr/src/edroomsl_types.cpp:80: syntax error before `{' token
+../edroomsl_types_swr/src/edroomsl_types.cpp:84: `TEDROOMUInt8' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:84: `input' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:84: `TEDROOMUInt8' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:84: `output' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:85: variable or field `TEDROOMUInt8_Serialize' declared void
+../edroomsl_types_swr/src/edroomsl_types.cpp:85: initializer list being treated as compound expression
+../edroomsl_types_swr/src/edroomsl_types.cpp:85: syntax error before `{' token
+../edroomsl_types_swr/src/edroomsl_types.cpp:89: `TEDROOMUInt8' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:89: `input' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:89: `TEDROOMUInt8' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:89: `output' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:90: variable or field `TEDROOMUInt8_Deserialize' declared void
+../edroomsl_types_swr/src/edroomsl_types.cpp:90: initializer list being treated as compound expression
+../edroomsl_types_swr/src/edroomsl_types.cpp:90: syntax error before `{' token
+../edroomsl_types_swr/src/edroomsl_types.cpp:94: `TEDROOMUInt16' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:94: `input' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:94: `TEDROOMUInt16' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:94: `output' was not declared in this scope
+../edroomsl_types_swr/src/edroomsl_types.cpp:95: variable or field `TEDROOMUInt16_Deserialize' declared void
+../edroomsl_types_swr/src/edroomsl_types.cpp:95: initializer list being treated as compound expression
+../edroomsl_types_swr/src/edroomsl_types.cpp:95: syntax error before `{' token
+make: *** [edroomsl_types_swr/src/subdir.mk:20: edroomsl_types_swr/src/edroomsl_types.o] Error 1
+
+00:28:56 Build Finished (took 162ms)
+

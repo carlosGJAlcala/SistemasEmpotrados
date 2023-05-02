@@ -1,0 +1,234 @@
+19:55:32 **** Build of configuration Debug for project prac6_students ****
+make all 
+Building file: ../sensors_drv/src/sensors.cpp
+Invoking: SPARC RTEMS C++ Compiler
+sparc-rtems-g++ -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/leon3_bprint/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/io_ctrl/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/bprint_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDLocation/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDPath/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/actuators_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/planner_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/random_swr/include" -I/opt/rtems-4.6/sparc-rtems/leon3/lib/include -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/config/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/sensors_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroombp_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_types_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/rtems_osswr/include" -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -MMD -MP -MF"sensors_drv/src/sensors.d" -MT"sensors_drv/src/sensors.d" -o "sensors_drv/src/sensors.o" "../sensors_drv/src/sensors.cpp"
+Finished building: ../sensors_drv/src/sensors.cpp
+ 
+Building file: ../random_swr/src/random.cpp
+Invoking: SPARC RTEMS C++ Compiler
+sparc-rtems-g++ -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/leon3_bprint/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/io_ctrl/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/bprint_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDLocation/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDPath/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/actuators_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/planner_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/random_swr/include" -I/opt/rtems-4.6/sparc-rtems/leon3/lib/include -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/config/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/sensors_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroombp_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_types_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/rtems_osswr/include" -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -MMD -MP -MF"random_swr/src/random.d" -MT"random_swr/src/random.d" -o "random_swr/src/random.o" "../random_swr/src/random.cpp"
+Finished building: ../random_swr/src/random.cpp
+ 
+Building file: ../planner_swr/src/planner.cpp
+Invoking: SPARC RTEMS C++ Compiler
+sparc-rtems-g++ -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/leon3_bprint/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/io_ctrl/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/bprint_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDLocation/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDPath/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/actuators_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/planner_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/random_swr/include" -I/opt/rtems-4.6/sparc-rtems/leon3/lib/include -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/config/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/sensors_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroombp_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_types_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/rtems_osswr/include" -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -MMD -MP -MF"planner_swr/src/planner.d" -MT"planner_swr/src/planner.d" -o "planner_swr/src/planner.o" "../planner_swr/src/planner.cpp"
+Finished building: ../planner_swr/src/planner.cpp
+ 
+Building file: ../io_ctrl/src/io_ctrl.c
+Invoking: SPARC RTEMS C Compiler
+sparc-rtems-gcc -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/rtems_osswr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/leon3_bprint/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/bprint_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_types_swr/include" -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -MMD -MP -MF"io_ctrl/src/io_ctrl.d" -MT"io_ctrl/src/io_ctrl.d" -o "io_ctrl/src/io_ctrl.o" "../io_ctrl/src/io_ctrl.c"
+Finished building: ../io_ctrl/src/io_ctrl.c
+ 
+Building file: ../edroomsl_types_swr/src/edroomsl_types.cpp
+Invoking: SPARC RTEMS C++ Compiler
+sparc-rtems-g++ -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/leon3_bprint/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/io_ctrl/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/bprint_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDLocation/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDPath/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/actuators_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/planner_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/random_swr/include" -I/opt/rtems-4.6/sparc-rtems/leon3/lib/include -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/config/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/sensors_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroombp_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_types_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/rtems_osswr/include" -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -MMD -MP -MF"edroomsl_types_swr/src/edroomsl_types.d" -MT"edroomsl_types_swr/src/edroomsl_types.d" -o "edroomsl_types_swr/src/edroomsl_types.o" "../edroomsl_types_swr/src/edroomsl_types.cpp"
+Finished building: ../edroomsl_types_swr/src/edroomsl_types.cpp
+ 
+Building file: ../edroomsl_swr/src/edroomsl.cpp
+Invoking: SPARC RTEMS C++ Compiler
+sparc-rtems-g++ -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/leon3_bprint/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/io_ctrl/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/bprint_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDLocation/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDPath/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/actuators_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/planner_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/random_swr/include" -I/opt/rtems-4.6/sparc-rtems/leon3/lib/include -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/config/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/sensors_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroombp_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_types_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/rtems_osswr/include" -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -MMD -MP -MF"edroomsl_swr/src/edroomsl.d" -MT"edroomsl_swr/src/edroomsl.d" -o "edroomsl_swr/src/edroomsl.o" "../edroomsl_swr/src/edroomsl.cpp"
+Finished building: ../edroomsl_swr/src/edroomsl.cpp
+ 
+Building file: ../edroomsl_swr/src/edroomtc.cpp
+Invoking: SPARC RTEMS C++ Compiler
+sparc-rtems-g++ -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/leon3_bprint/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/io_ctrl/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/bprint_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDLocation/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDPath/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/actuators_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/planner_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/random_swr/include" -I/opt/rtems-4.6/sparc-rtems/leon3/lib/include -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/config/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/sensors_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroombp_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_types_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/rtems_osswr/include" -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -MMD -MP -MF"edroomsl_swr/src/edroomtc.d" -MT"edroomsl_swr/src/edroomtc.d" -o "edroomsl_swr/src/edroomtc.o" "../edroomsl_swr/src/edroomtc.cpp"
+Finished building: ../edroomsl_swr/src/edroomtc.cpp
+ 
+Building file: ../edroombp_swr/src/rtemsapi_4_6/rtems_4_6/edroombp.cpp
+Invoking: SPARC RTEMS C++ Compiler
+sparc-rtems-g++ -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/leon3_bprint/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/io_ctrl/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/bprint_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDLocation/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDPath/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/actuators_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/planner_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/random_swr/include" -I/opt/rtems-4.6/sparc-rtems/leon3/lib/include -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/config/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/sensors_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroombp_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_types_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/rtems_osswr/include" -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -MMD -MP -MF"edroombp_swr/src/rtemsapi_4_6/rtems_4_6/edroombp.d" -MT"edroombp_swr/src/rtemsapi_4_6/rtems_4_6/edroombp.d" -o "edroombp_swr/src/rtemsapi_4_6/rtems_4_6/edroombp.o" "../edroombp_swr/src/rtemsapi_4_6/rtems_4_6/edroombp.cpp"
+Finished building: ../edroombp_swr/src/rtemsapi_4_6/rtems_4_6/edroombp.cpp
+ 
+Building file: ../edroom_glue/src/edroomdeployment.cpp
+Invoking: SPARC RTEMS C++ Compiler
+sparc-rtems-g++ -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/leon3_bprint/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/io_ctrl/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/bprint_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDLocation/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/dataclasses/CDPath/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/actuators_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/planner_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/random_swr/include" -I/opt/rtems-4.6/sparc-rtems/leon3/lib/include -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/config/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/sensors_drv/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroombp_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroomsl_types_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/rtems_osswr/include" -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -MMD -MP -MF"edroom_glue/src/edroomdeployment.d" -MT"edroom_glue/src/edroomdeployment.d" -o "edroom_glue/src/edroomdeployment.o" "../edroom_glue/src/edroomdeployment.cpp"
+In file included from ../edroom_glue/src/edroomdeployment.cpp:6:
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:15:37: warning: public/vehicle_iface_v1.h: No such file or directory
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:16:43: warning: public/capathplanner_iface_v1.h: No such file or directory
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:17:43: warning: public/capathtracker_iface_v1.h: No such file or directory
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:18:46: warning: public/ccavoidobstacles_iface_v1.h: No such file or directory
+In file included from ../edroom_glue/src/edroomdeployment.cpp:6:
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:51: syntax error before `::' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:52: syntax error before `::' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:53: syntax error before `::' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:54: syntax error before `::' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:72: syntax error before `*' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:73: syntax error before `*' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:74: syntax error before `*' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:75: syntax error before `*' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:80: `Vehicle' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:80: `p_comp1' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:81: `CAPathPlanner' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:81: `p_comp2' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:82: `CAPathTracker' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:82: `p_comp3' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:83: `CCAvoidObstacles' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:83: `p_comp4' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:83: invalid data member initialization
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:83: (use `=' to initialize static data members)
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:83: variable or field `SetComponents' declared void
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:135: syntax error before `*' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:136: syntax error before `*' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:137: syntax error before `*' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:138: syntax error before `*' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:145: `Vehicle' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:145: `p_comp1' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:146: `CAPathPlanner' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:146: `p_comp2' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:147: `CAPathTracker' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:147: `p_comp3' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:148: `CCAvoidObstacles' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:148: `p_comp4' was not declared in this scope
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:148: invalid data member initialization
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:148: variable or field `Config' declared void
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:157: syntax error before `::' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:158: ISO C++ forbids defining types within return type
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:158: syntax error before `::' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:159: syntax error before `::' token
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_students/edroom_glue/include/edroom_glue/edroomdeployment.h:160: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:11: `Vehicle' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:11: `comp1' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:12: `CAPathPlanner' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:12: `comp2' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:13: `CAPathTracker' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:13: `comp3' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:14: `CCAvoidObstacles' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:14: `comp4' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:14: variable or field `MainWait' declared void
+../edroom_glue/src/edroomdeployment.cpp:14: initializer list being treated as compound expression
+../edroom_glue/src/edroomdeployment.cpp:14: syntax error before `{' token
+../edroom_glue/src/edroomdeployment.cpp: In member function `void CEDROOMSystemMemory::SetMemory()':
+../edroom_glue/src/edroomdeployment.cpp:36: `comp1Memory' undeclared (first use this function)
+../edroom_glue/src/edroomdeployment.cpp:36: (Each undeclared identifier is reported only once for each function it appears in.)
+../edroom_glue/src/edroomdeployment.cpp:38: `comp2Memory' undeclared (first use this function)
+../edroom_glue/src/edroomdeployment.cpp:40: `comp3Memory' undeclared (first use this function)
+../edroom_glue/src/edroomdeployment.cpp:42: `comp4Memory' undeclared (first use this function)
+../edroom_glue/src/edroomdeployment.cpp: At global scope:
+../edroom_glue/src/edroomdeployment.cpp:49: `Vehicle' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:49: `p_comp1' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:50: `CAPathPlanner' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:50: `p_comp2' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:51: `CAPathTracker' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:51: `p_comp3' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:52: `CCAvoidObstacles' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:52: `p_comp4' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:52: `void CEDROOMSystemCommSAP::SetComponents' is not a static member of `class CEDROOMSystemCommSAP'
+../edroom_glue/src/edroomdeployment.cpp:52: variable `void CEDROOMSystemCommSAP::SetComponents' has initializer but incomplete type
+../edroom_glue/src/edroomdeployment.cpp:52: syntax error before `{' token
+../edroom_glue/src/edroomdeployment.cpp:54: ISO C++ forbids declaration of `mp_comp2' with no type
+../edroom_glue/src/edroomdeployment.cpp:54: `p_comp2' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:55: ISO C++ forbids declaration of `mp_comp3' with no type
+../edroom_glue/src/edroomdeployment.cpp:55: `p_comp3' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:56: ISO C++ forbids declaration of `mp_comp4' with no type
+../edroom_glue/src/edroomdeployment.cpp:56: `p_comp4' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:57: syntax error before `}' token
+../edroom_glue/src/edroomdeployment.cpp: In static member function `static TEDROOMSignal CEDROOMSystemCommSAP::C1MainActor_PAvoidObstaclesSysCtrl__C4AvoidObstacles_PAvoidObstaclesSysCtrl(int)':
+../edroom_glue/src/edroomdeployment.cpp:73: `Vehicle' undeclared (first use this function)
+../edroom_glue/src/edroomdeployment.cpp:73: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:73: `CCAvoidObstacles' undeclared (first use this function)
+../edroom_glue/src/edroomdeployment.cpp:73: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:75: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:75: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp: In static member function `static TEDROOMSignal CEDROOMSystemCommSAP::C4AvoidObstacles_PAvoidObstaclesSysCtrl__C1MainActor_PAvoidObstaclesSysCtrl(int)':
+../edroom_glue/src/edroomdeployment.cpp:90: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:90: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:92: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:92: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:94: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:94: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp: In static member function `static TEDROOMSignal CEDROOMSystemCommSAP::C2PathPlanner_PTrackPath__C3PathTracker_PTrackPath(int)':
+../edroom_glue/src/edroomdeployment.cpp:109: `CAPathPlanner' undeclared (first use this function)
+../edroom_glue/src/edroomdeployment.cpp:109: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:109: `CAPathTracker' undeclared (first use this function)
+../edroom_glue/src/edroomdeployment.cpp:109: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp: In static member function `static TEDROOMSignal CEDROOMSystemCommSAP::C3PathTracker_PTrackPath__C2PathPlanner_PTrackPath(int)':
+../edroom_glue/src/edroomdeployment.cpp:124: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:124: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp: In static member function `static TEDROOMSignal CEDROOMSystemCommSAP::C1MainActor_PPathTrackerCtrl__C3PathTracker_PPathTrackerCtrl(int)':
+../edroom_glue/src/edroomdeployment.cpp:139: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:139: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:141: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:141: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:143: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:143: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp: In static member function `static TEDROOMSignal CEDROOMSystemCommSAP::C3PathTracker_PPathTrackerCtrl__C1MainActor_PPathTrackerCtrl(int)':
+../edroom_glue/src/edroomdeployment.cpp:158: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:158: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:160: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:160: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp: In static member function `static TEDROOMSignal CEDROOMSystemCommSAP::C1MainActor_PPathPlannerCtrl__C2PathPlanner_PPathPlannerCtrl(int)':
+../edroom_glue/src/edroomdeployment.cpp:175: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:175: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:177: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:177: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:179: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:179: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:181: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:181: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp: In static member function `static TEDROOMSignal CEDROOMSystemCommSAP::C2PathPlanner_PPathPlannerCtrl__C1MainActor_PPathPlannerCtrl(int)':
+../edroom_glue/src/edroomdeployment.cpp:196: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:196: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:198: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp:198: syntax error before `::' token
+../edroom_glue/src/edroomdeployment.cpp: In member function `void CEDROOMSystemCommSAP::RegisterInterfaces()':
+../edroom_glue/src/edroomdeployment.cpp:215: `mp_comp1' undeclared (first use this function)
+../edroom_glue/src/edroomdeployment.cpp:221: base operand of `->' is not a pointer
+../edroom_glue/src/edroomdeployment.cpp:222: base operand of `->' is not a pointer
+../edroom_glue/src/edroomdeployment.cpp:223: base operand of `->' is not a pointer
+../edroom_glue/src/edroomdeployment.cpp:226: base operand of `->' is not a pointer
+../edroom_glue/src/edroomdeployment.cpp:227: base operand of `->' is not a pointer
+../edroom_glue/src/edroomdeployment.cpp:228: base operand of `->' is not a pointer
+../edroom_glue/src/edroomdeployment.cpp:231: base operand of `->' is not a pointer
+../edroom_glue/src/edroomdeployment.cpp:232: base operand of `->' is not a pointer
+../edroom_glue/src/edroomdeployment.cpp: In member function `void CEDROOMSystemCommSAP::SetLocalConnections()':
+../edroom_glue/src/edroomdeployment.cpp:242: base operand of `->' is not a pointer
+../edroom_glue/src/edroomdeployment.cpp:246: base operand of `->' is not a pointer
+../edroom_glue/src/edroomdeployment.cpp:246: base operand of `->' is not a pointer
+../edroom_glue/src/edroomdeployment.cpp:250: base operand of `->' is not a pointer
+../edroom_glue/src/edroomdeployment.cpp:254: base operand of `->' is not a pointer
+../edroom_glue/src/edroomdeployment.cpp: At global scope:
+../edroom_glue/src/edroomdeployment.cpp:281: cannot declare member function `CEDROOMSystemDeployment::CEDROOMSystemDeployment' within `CEDROOMSystemCommSAP'
+../edroom_glue/src/edroomdeployment.cpp:281: syntax error before `{' token
+../edroom_glue/src/edroomdeployment.cpp:292: `p_comp1' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:293: `p_comp2' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:294: `p_comp3' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:295: `p_comp4' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:295: cannot declare member `CEDROOMSystemDeployment::Config' within `CEDROOMSystemCommSAP'
+../edroom_glue/src/edroomdeployment.cpp:295: invalid declarator
+../edroom_glue/src/edroomdeployment.cpp:295: syntax error before `{' token
+../edroom_glue/src/edroomdeployment.cpp:298: ISO C++ forbids declaration of `mp_comp2' with no type
+../edroom_glue/src/edroomdeployment.cpp:298: redefinition of `int mp_comp2'
+../edroom_glue/src/edroomdeployment.cpp:54: `int mp_comp2' previously defined here
+../edroom_glue/src/edroomdeployment.cpp:298: `p_comp2' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:299: ISO C++ forbids declaration of `mp_comp3' with no type
+../edroom_glue/src/edroomdeployment.cpp:299: redefinition of `int mp_comp3'
+../edroom_glue/src/edroomdeployment.cpp:55: `int mp_comp3' previously defined here
+../edroom_glue/src/edroomdeployment.cpp:299: `p_comp3' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:300: ISO C++ forbids declaration of `mp_comp4' with no type
+../edroom_glue/src/edroomdeployment.cpp:300: redefinition of `int mp_comp4'
+../edroom_glue/src/edroomdeployment.cpp:56: `int mp_comp4' previously defined here
+../edroom_glue/src/edroomdeployment.cpp:300: `p_comp4' was not declared in this scope
+../edroom_glue/src/edroomdeployment.cpp:302: syntax error before `.' token
+../edroom_glue/src/edroomdeployment.cpp:307: syntax error before `.' token
+../edroom_glue/src/edroomdeployment.cpp:308: syntax error before `.' token
+../edroom_glue/src/edroomdeployment.cpp:315: cannot declare member function `CEDROOMSystemDeployment::StartComponents' within `CEDROOMSystemCommSAP'
+../edroom_glue/src/edroomdeployment.cpp:315: syntax error before `{' token
+../edroom_glue/src/edroomdeployment.cpp:317: syntax error before `->' token
+../edroom_glue/src/edroomdeployment.cpp:318: syntax error before `->' token
+../edroom_glue/src/edroomdeployment.cpp:319: syntax error before `->' token
+../edroom_glue/src/edroomdeployment.cpp:326: cannot declare member function `CEDROOMSystemDeployment::Start' within `CEDROOMSystemCommSAP'
+../edroom_glue/src/edroomdeployment.cpp:326: syntax error before `{' token
+../edroom_glue/src/edroomdeployment.cpp:338: syntax error before `.' token
+../edroom_glue/src/edroomdeployment.cpp:341: invalid type argument of `unary *'
+../edroom_glue/src/edroomdeployment.cpp:342: invalid type argument of `unary *'
+../edroom_glue/src/edroomdeployment.cpp:343: invalid type argument of `unary *'
+../edroom_glue/src/edroomdeployment.cpp:343: ISO C++ forbids declaration of `MainWait' with no type
+../edroom_glue/src/edroomdeployment.cpp:343: redefinition of `int MainWait'
+../edroom_glue/src/edroomdeployment.cpp:14: `int MainWait' previously defined here
+../edroom_glue/src/edroomdeployment.cpp:343: initializer list being treated as compound expression
+../edroom_glue/src/edroomdeployment.cpp:348: syntax error before `}' token
+make: *** [edroom_glue/src/subdir.mk:20: edroom_glue/src/edroomdeployment.o] Error 1
+
+19:55:32 Build Finished (took 412ms)
+
