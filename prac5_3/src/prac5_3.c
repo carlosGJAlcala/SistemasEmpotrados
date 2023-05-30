@@ -230,39 +230,23 @@ rtems_task TAvoidObstacles(rtems_task_argument unused) {
 	status = rtems_task_ident( RTEMS_SELF, RTEMS_SEARCH_ALL_NODES, &tid);
 
 	task_index = rtems_get_index(tid) - 1;
-	
+
 	rtems_interval ticks;
 	ticks = get_ticks_since_boot();
-	
+
 	for (;;) {
 		rtems_status_code status;
 
-		rtems_semaphore_obtain(MutexId,RTEMS_WAIT,RTEMS_NO_TIMEOUT);
-
-		puts("T1 Do Avoid Obstacles");
-		printf(" - rtems_ticks_since_boot - %i\n\n", get_ticks_since_boot());
-
-		rtems_semaphore_release(MutexId);
-
-		ticks+=10;
-		status=task_delay_until(ticks);
-		
-		/*
-		status = rtems_clock_get(RTEMS_CLOCK_GET_TOD, &time);
-		if (time.second >= 3335) {
-			puts("*** END OF CLOCK TICK TEST ***");
-			exit(0);
-		}
-
-		put_name(Task_name[task_index], FALSE);
-
-		status = task_delay_until(get_ticks_since_boot() + 10);
 		rtems_semaphore_obtain(MutexId, RTEMS_WAIT, RTEMS_NO_TIMEOUT);
 
 		puts("T1 Do Avoid Obstacles");
 		printf(" - rtems_ticks_since_boot - %i\n\n", get_ticks_since_boot());
+
 		rtems_semaphore_release(MutexId);
-		*/
+
+		ticks += 10;
+		status = task_delay_until(ticks);
+
 	}
 
 }
@@ -277,20 +261,20 @@ rtems_task TPathTracking(rtems_task_argument unused) {
 	status = rtems_task_ident( RTEMS_SELF, RTEMS_SEARCH_ALL_NODES, &tid);
 
 	task_index = rtems_get_index(tid) - 1;
+
+	rtems_interval ticks;
+	ticks = get_ticks_since_boot();
 	for (;;) {
-		status = rtems_clock_get(RTEMS_CLOCK_GET_TOD, &time);
-		if (time.second >= 3335) {
-			exit(0);
-		}
-
-		put_name(Task_name[task_index], FALSE);
-
-		status = task_delay_until(get_ticks_since_boot() + 15);
 
 		rtems_semaphore_obtain(MutexId, RTEMS_WAIT, RTEMS_NO_TIMEOUT);
+
 		puts("T2 Do PathTracking");
 		printf(" - rtems_ticks_since_boot - %i\n\n", get_ticks_since_boot());
+
 		rtems_semaphore_release(MutexId);
+
+		ticks += 15;
+		status = task_delay_until(ticks);
 
 	}
 }
@@ -305,21 +289,19 @@ rtems_task TSensorFusion(rtems_task_argument unused) {
 	status = rtems_task_ident( RTEMS_SELF, RTEMS_SEARCH_ALL_NODES, &tid);
 
 	task_index = rtems_get_index(tid) - 1;
+
+	rtems_interval ticks;
+	ticks = get_ticks_since_boot();
 	for (;;) {
-		status = rtems_clock_get(RTEMS_CLOCK_GET_TOD, &time);
-		if (time.second >= 3335) {
-			puts("*** END OF CLOCK TICK TEST ***");
-			exit(0);
-		}
-
-		put_name(Task_name[task_index], FALSE);
-
-		status = task_delay_until(get_ticks_since_boot() + 30);
 
 		rtems_semaphore_obtain(MutexId, RTEMS_WAIT, RTEMS_NO_TIMEOUT);
+
 		puts("T3 Do Sensor Fusion\n");
 		printf(" - rtems_ticks_since_boot - %i\n\n", get_ticks_since_boot());
+
 		rtems_semaphore_release(MutexId);
+		ticks += 30;
+		status = task_delay_until(ticks);
 
 	}
 }
@@ -334,20 +316,23 @@ rtems_task TCalculatePath(rtems_task_argument unused) {
 	status = rtems_task_ident( RTEMS_SELF, RTEMS_SEARCH_ALL_NODES, &tid);
 
 	task_index = rtems_get_index(tid) - 1;
+
+	task_index = rtems_get_index(tid) - 1;
+
+	rtems_interval ticks;
+	ticks = get_ticks_since_boot();
 	for (;;) {
-		status = rtems_clock_get(RTEMS_CLOCK_GET_TOD, &time);
-		if (time.second >= 3335) {
-			exit(0);
-		}
-
-		put_name(Task_name[task_index], FALSE);
-
-		status = task_delay_until(get_ticks_since_boot() + 30);
 
 		rtems_semaphore_obtain(MutexId, RTEMS_WAIT, RTEMS_NO_TIMEOUT);
+
 		puts("T4 Do CalculatePath\n");
 		printf(" - rtems_ticks_since_boot - %i\n\n", get_ticks_since_boot());
+
 		rtems_semaphore_release(MutexId);
+
+		rtems_semaphore_release(MutexId);
+		ticks += 30;
+		status = task_delay_until(ticks);
 
 	}
 }

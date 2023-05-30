@@ -9,6 +9,7 @@
 // include deployment edroom components
  
 #include <public/ccproducer_iface_v1.h>
+#include <public/ccconsumer_iface_v1.h>
  
 #ifdef CONFIG_EDROOMBP_DEPLOYMENT_NEED_TASK
  
@@ -29,9 +30,10 @@ rtems_task Init (uint32_t arg){
 #endif
  
  
-	CCProducer	comp3(3, 10, EDROOMprioNormal, 1024, systemDeployment.GetComp3Memory());
+	CCProducer	comp2(2, 10, EDROOMprioNormal, 1024, systemDeployment.GetComp2Memory());
+	CCConsumer	comp3(3, 13, EDROOMprioNormal, 1024, systemDeployment.GetComp3Memory());
  
-	systemDeployment.Config(&comp3);
+	systemDeployment.Config(&comp2, &comp3);
  
 	systemDeployment.Start();
  

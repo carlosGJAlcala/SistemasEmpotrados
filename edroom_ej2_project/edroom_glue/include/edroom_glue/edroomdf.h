@@ -1,2 +1,1 @@
-#define _EDROOM_IS_DEBUG_
 #define _EDROOM_IS_EMBEDDED_

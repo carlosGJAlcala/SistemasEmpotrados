@@ -1,0 +1,57 @@
+
+
+/*
+ * EDROOM Protocol Model.
+*/ 
+
+
+protocol CPService{
+
+	uri :=es.uah.aut.srg.edroom.mclev.cmp_iface.CPService;
+	version :=v1;
+
+
+	/*
+	 * Input messages.
+	*/ 
+
+	input messages
+
+	{
+
+
+		/*
+		 * Asynchronous messages.
+		*/ 
+
+		send SFreeRes();
+
+		/*
+		 * Synchronous Invoke messages.
+		*/ 
+
+		invoke SResReq() replies SResAckSResNack;
+
+	};
+
+
+
+	/*
+	 * Output messages.
+	*/ 
+
+	output messages
+
+	{
+
+
+		/*
+		 * Synchronous reply messages.
+		*/ 
+
+		reply SResAck();
+		reply SResNack();
+
+	};
+
+};

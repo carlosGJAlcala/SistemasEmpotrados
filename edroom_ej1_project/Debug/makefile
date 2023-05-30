@@ -13,8 +13,11 @@ RM := rm -rf
 -include edroombp_swr/src/rtemsapi_4_6/rtems_4_6/subdir.mk
 -include edroom_glue/src/subdir.mk
 -include components/example1/src/subdir.mk
--include components/example1/ccproducer/src/subdir.mk
+-include components/ccproducer/src/subdir.mk
 -include components/ccconsumer/src/subdir.mk
+-include components/Example1/src/subdir.mk
+-include components/CCProducer/src/subdir.mk
+-include components/CCConsumer/src/subdir.mk
 -include subdir.mk
 -include objects.mk
 

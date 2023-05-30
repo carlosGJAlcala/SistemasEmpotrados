@@ -8,12 +8,14 @@
 //*****************************************************************************
 //Main Wait
  
-void MainWait(CCProducer   &comp3){
+void MainWait(CCProducer   &comp2,
+					CCConsumer   &comp3){
  
 	Pr_Time waitTime(3, 0);
  
 #ifdef _EDROOM_SYSTEM_CLOSE
-	while(!comp3.EDROOMIsComponentFinished())
+	while(!comp2.EDROOMIsComponentFinished()
+				||!comp3.EDROOMIsComponentFinished())
 #else
 	while(true)
 #endif
@@ -27,14 +29,18 @@ void MainWait(CCProducer   &comp3){
  
 void CEDROOMSystemMemory::SetMemory(){
  
+	comp2Memory.SetMemory(10, comp2Messages, &comp2MessagesMarks[0]
+					,10,comp2QueueNodes, &comp2QueueNodesMarks[0]);
 	comp3Memory.SetMemory(10, comp3Messages, &comp3MessagesMarks[0]
-					,10,comp3QueueNodes, &comp3QueueNodesMarks[0]);
+					,13,comp3QueueNodes, &comp3QueueNodesMarks[0]);
 }
  
 //*****************************************************************************
 //SetComponents
  
-void CEDROOMSystemCommSAP::SetComponents(CCProducer   *p_comp3){
+void CEDROOMSystemCommSAP::SetComponents(CCProducer   *p_comp2,
+										CCConsumer   *p_comp3){
+	mp_comp2=p_comp2;
 	mp_comp3=p_comp3;
 }
  
@@ -46,7 +52,7 @@ void CEDROOMSystemCommSAP::SetComponents(CCProducer   *p_comp3){
 //*****************************************************************************
  
  
-TEDROOMSignal CEDROOMSystemCommSAP::C3Producer_PPout__C2Consumer_PRecData(TEDROOMSignal signalOut){
+TEDROOMSignal CEDROOMSystemCommSAP::C2Producer_PpOut__C3Consumer_PpIn(TEDROOMSignal signalOut){
  
 	TEDROOMSignal signalIn;
  
@@ -61,13 +67,13 @@ TEDROOMSignal CEDROOMSystemCommSAP::C3Producer_PPout__C2Consumer_PRecData(TEDROO
  
 }
  
-TEDROOMSignal CEDROOMSystemCommSAP::C2Consumer_PRecData__C3Producer_PPout(TEDROOMSignal signalOut){
+TEDROOMSignal CEDROOMSystemCommSAP::C3Consumer_PpIn__C2Producer_PpOut(TEDROOMSignal signalOut){
  
 	TEDROOMSignal signalIn;
  
 	switch(signalOut){
  
-		case( CCConsumer::SCoReady):	 signalIn=CCProducer::SCoReady; break;
+		case( CCConsumer::SConReady):	 signalIn=CCProducer::SConReady; break;
  
 		default: signalIn=(TEDROOMSignal)(-1); break;
  
@@ -83,8 +89,12 @@ TEDROOMSignal CEDROOMSystemCommSAP::C2Consumer_PRecData__C3Producer_PPout(TEDROO
  
 void CEDROOMSystemCommSAP::RegisterInterfaces(){
  
+	// Register Interface for Component 2
+	m_localCommSAP.RegisterInterface(1, mp_comp2->pOut, mp_comp2);
+ 
 	// Register Interface for Component 3
-	m_localCommSAP.RegisterInterface(1, mp_comp3->Pout, mp_comp3);
+	m_localCommSAP.RegisterInterface(1, mp_comp3->Timer, mp_comp3);
+	m_localCommSAP.RegisterInterface(2, mp_comp3->pIn, mp_comp3);
  
 }
  
@@ -94,12 +104,9 @@ void CEDROOMSystemCommSAP::RegisterInterfaces(){
  
 void CEDROOMSystemCommSAP::SetLocalConnections(){
  
-	   m_localCommSAP.Connect(mp_comp3->Pout, mp_comp2->RecData, connections[0],
-					C3Producer_PPout__C2Consumer_PRecData, 
-					C2Consumer_PRecData__C3Producer_PPout);
-
-
-
+	m_localCommSAP.Connect(mp_comp2->pOut, mp_comp3->pIn, connections[0], 
+					C2Producer_PpOut__C3Consumer_PpIn, 
+					C3Consumer_PpIn__C2Producer_PpOut);
  
 }
  
@@ -135,11 +142,14 @@ CEDROOMSystemDeployment::CEDROOMSystemDeployment(){
 //*****************************************************************************
 ////Config
  
-void CEDROOMSystemDeployment::Config(CCProducer   *p_comp3){
+void CEDROOMSystemDeployment::Config(CCProducer   *p_comp2,
+											CCConsumer   *p_comp3){
  
+	mp_comp2=p_comp2;
 	mp_comp3=p_comp3;
  
-	systemCommSAP.SetComponents(	p_comp3);
+	systemCommSAP.SetComponents(	p_comp2,
+									p_comp3);
  
 	systemCommSAP.RegisterInterfaces();
 	systemCommSAP.SetConnections();
@@ -150,6 +160,7 @@ void CEDROOMSystemDeployment::Config(CCProducer   *p_comp3){
 ////StartComponents
  
 void CEDROOMSystemDeployment::StartComponents(){
+	mp_comp2->EDROOMStart();
 	mp_comp3->EDROOMStart();
  
 }
@@ -171,7 +182,8 @@ StartComponents();
  
 	kernel.Start();
  
-	MainWait(*mp_comp3);
+	MainWait(*mp_comp2,
+				*mp_comp3);
  
  
 #endif
@@ -190,7 +202,8 @@ StartComponents();
 Pr_TaskRV_t CEDROOMSystemDeployment::main_task(Pr_TaskP_t){
  
 	systemDeployment.StartComponents();
-	MainWait(*systemDeployment.mp_comp3);
+	MainWait(*systemDeployment.mp_comp2,
+				*systemDeployment.mp_comp3);
  
 }
 #endif

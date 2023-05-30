@@ -1,15 +1,6 @@
-20:42:40 **** Incremental Build of configuration Debug for project prac5_2 ****
+13:58:11 **** Incremental Build of configuration Debug for project prac5_2 ****
 make all 
-Building file: ../src/prac5_2.c
-Invoking: SPARC RTEMS C Compiler
-sparc-rtems-gcc -I/opt/rtems-4.6/sparc-rtems/leon3/lib/include -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -MMD -MP -MF"src/prac5_2.d" -MT"src/prac5_2.d" -o "src/prac5_2.o" "../src/prac5_2.c"
-Finished building: ../src/prac5_2.c
- 
-Building target: prac5_2
-Invoking: SPARC RTEMS C Linker
-sparc-rtems-gcc -msoft-float -o "prac5_2" ./src/prac5_2.o   
-Finished building target: prac5_2
- 
+make: No se hace nada para 'all'.
 
-20:42:40 Build Finished (took 214ms)
+13:58:11 Build Finished (took 110ms)
 

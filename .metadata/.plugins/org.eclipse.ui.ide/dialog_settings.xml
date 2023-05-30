@@ -15,10 +15,11 @@
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
-			<item value="/home/carlos/Descargas/prac6_1_eclipse_project.zip"/>
 			<item value="/home/carlos/Descargas/edroom_ej2_eclipse_project.zip"/>
+			<item value="/home/carlos/Descargas/prac6_2_eclipse_project(1).zip"/>
+			<item value="/home/carlos/Descargas/prac6_1_eclipse_project.zip"/>
+			<item value="/home/carlos/Descargas/edroom_ej1_eclipse_project.zip"/>
 			<item value="/home/carlos/Escritorio/edroom_ej1_eclipse_project.zip"/>
-			<item value="/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/edroom_ej1_eclipse_project.zip"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">

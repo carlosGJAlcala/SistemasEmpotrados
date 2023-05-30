@@ -1,6 +1,6 @@
-23:05:08 **** Incremental Build of configuration Debug for project prac5_0 ****
+13:55:49 **** Build of configuration Debug for project prac5_0 ****
 make all 
 make: No se hace nada para 'all'.
 
-23:05:08 Build Finished (took 109ms)
+13:55:49 Build Finished (took 111ms)
 

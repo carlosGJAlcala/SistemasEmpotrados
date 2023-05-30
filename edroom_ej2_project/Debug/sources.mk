@@ -24,8 +24,12 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+. \
 edroomsl_types_swr/src \
 edroomsl_swr/src \
 edroombp_swr/src/rtemsapi_4_6/rtems_4_6 \
 edroom_glue/src \
+components/Example2/src \
+components/CCServer/src \
+components/CCClient/src \
 

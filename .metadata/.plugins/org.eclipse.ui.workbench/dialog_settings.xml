@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="610" key="DIALOG_X_ORIGIN"/>
+		<item value="100" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="675" key="dialogHeight"/>
 		<item value="1200" key="dialogWidth"/>
@@ -25,5 +29,7 @@
 		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
 			<item value="/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/prac3_fuentes(2).zip"/>
 		</list>
+	</section>
+	<section name="FileSystemImportWizard">
 	</section>
 </section>

@@ -1,0 +1,51 @@
+import "../../../dataclasses/TEDROOMByte/models/TEDROOMByte.ed_dclass";
+
+
+/*
+ * EDROOM Protocol Model.
+*/ 
+
+
+protocol CPRecData{
+
+	uri :=es.uah.aut.srg.edroom.mclev.cmp_iface.CPRecData;
+	version :=v1;
+
+
+	/*
+	 * Input messages.
+	*/ 
+
+	input messages
+
+	{
+
+
+		/*
+		 * Asynchronous messages.
+		*/ 
+
+		send SData(TEDROOMByte(v1));
+
+	};
+
+
+
+	/*
+	 * Output messages.
+	*/ 
+
+	output messages
+
+	{
+
+
+		/*
+		 * Asynchronous messages.
+		*/ 
+
+		send SConReady();
+
+	};
+
+};

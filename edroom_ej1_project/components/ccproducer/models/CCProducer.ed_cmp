@@ -1,0 +1,239 @@
+import "../../../dataclasses/TEDROOMByte/models/TEDROOMByte.ed_dclass";
+import "../../../protocols/CPRecData/models/CPRecData.ed_prot";
+import "../../../protocols/EDROOMServiceLibrary/models/EDROOMServiceLibrary.ed_prot";
+
+
+
+/**
+ * \class   CCProducer
+ *
+ */
+
+
+reactive component CCProducer{
+
+	uri := es.uah.aut.srg.edroom.mclev.cmp.CCProducer;
+	version := v1;
+	stack_size := 1024;
+	def_max_nb_messages := 10;
+
+
+	structure {
+
+		ports {
+
+
+			system port EDROOMsl
+			{
+				id:= 0;
+				protocol:= EDROOMServiceLibrary(v1);
+			};
+			conjugated  external port pOut {
+				id := 1;
+				cardinality := 1;
+				protocol := CPRecData(v1);
+
+			};
+
+
+
+		};
+
+
+		data pools {
+			TEDROOMByte(v1) CEDROOMPoolTEDROOMByte[10];
+
+		};
+
+
+	};
+
+
+	behaviour {
+
+		contexts {
+
+
+			context Top_0{
+
+
+				id := 0;
+
+
+				variables {
+					variable Vaux{
+					 class := TEDROOMByte(v1);
+
+					 constructor := "a";
+					 dimension := 0;
+					};
+
+
+				};
+
+
+				constants {
+					constant VauxLimit{
+					 class := TEDROOMByte(v1);
+
+					 constructor := "z";
+					 dimension := 0;
+					};
+
+
+				};
+
+
+				states {
+					state I{
+						id := 0;
+					};
+					state Ready{
+						id := 1;
+					};
+				};
+
+
+				init state := I;
+
+
+				guards{
+
+					/**
+					 * \brief  
+					 */
+
+					guard GNeedReset {
+						<code>
+						return (Vaux&gt;VauxLimit);
+
+
+						</code>
+
+					};
+
+
+				};
+
+
+				items{
+					/**
+					 * \brief  
+					 */
+
+					action FResetData {
+						<code>
+						Vaux=&apos;a&apos;;
+
+
+						</code>
+
+					};
+
+					/**
+					 * \brief  
+					 */
+
+					send FSendData {
+						code {
+							<code>
+								
+									// Complete Data 
+								
+								*pSData_Data=Vaux;
+								Vaux++;
+
+
+							</code>
+						};
+
+						port :=pOut;
+
+						message :=CPRecData(v1)::SData;
+
+						priority :=3;
+
+					};
+
+
+				};
+
+
+				choice points{
+					choice point SendData{
+
+
+						id := 0;
+
+
+						branches{
+
+							branch SendData_ReseTData{
+								id := 0;
+								sink := Ready;
+
+
+								actions := FResetData;
+
+								guard := GNeedReset;
+
+							};
+
+
+						};
+
+						default branch SendData_DatoOk{
+							id := 1;
+							sink := Ready;
+
+						};
+					};
+				};
+
+
+				transitions{
+
+					transition Init{
+						id := 0;
+						source := I;
+						sink := Ready;
+
+
+
+						asynchronous trigger {
+							port := EDROOMsl;
+							message := EDROOMServiceLibrary(v1)::EDROOMStart;
+						};
+					};
+
+					transition SendData{
+						id := 1;
+						source := Ready;
+						sink := SendData;
+
+
+						sends := FSendData;
+
+
+						asynchronous trigger {
+							port := pOut;
+							message := CPRecData(v1)::SConReady;
+						};
+					};
+
+
+				};
+
+
+			};
+
+
+		};
+
+		top context := Top_0;
+
+
+	};
+
+
+};

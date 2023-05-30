@@ -52,26 +52,6 @@ class CEDROOMSystemMemory{
  
 	public:
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	CCServer::CEDROOMMemory comp2Memory;
 	CCClient::CEDROOMMemory comp3Memory;
 	CCClient::CEDROOMMemory comp4Memory;
@@ -127,8 +107,8 @@ class CEDROOMSystemCommSAP{
  
 //Signal Conversion
  
-	static TEDROOMSignal C2Server_PpService1__C3Client1_PpSerReq(TEDROOMSignal signal);
-	static TEDROOMSignal C3Client1_PpSerReq__C2Server_PpService1(TEDROOMSignal signal);
+	static TEDROOMSignal C2Server_PpService1__C3Client_PpSerReq(TEDROOMSignal signal);
+	static TEDROOMSignal C3Client_PpSerReq__C2Server_PpService1(TEDROOMSignal signal);
  
  
 //!Register Interfaces

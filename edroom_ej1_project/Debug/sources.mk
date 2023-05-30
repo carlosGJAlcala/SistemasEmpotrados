@@ -30,6 +30,9 @@ edroomsl_swr/src \
 edroombp_swr/src/rtemsapi_4_6/rtems_4_6 \
 edroom_glue/src \
 components/example1/src \
-components/example1/ccproducer/src \
+components/ccproducer/src \
 components/ccconsumer/src \
+components/Example1/src \
+components/CCProducer/src \
+components/CCConsumer/src \
 

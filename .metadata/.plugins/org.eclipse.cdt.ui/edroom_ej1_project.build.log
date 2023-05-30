@@ -1,66 +1,90 @@
-00:28:56 **** Incremental Build of configuration Debug for project edroom_ej1_project ****
+20:15:53 **** Incremental Build of configuration Debug for project edroom_ej1_project ****
 make all 
-Building file: ../edroomsl_types_swr/src/edroomsl_types.cpp
+Building file: ../components/CCConsumer/src/CCConsumerB.cpp
 Invoking: SPARC RTEMS C++ Compiler
-sparc-rtems-g++ -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -MMD -MP -MF"edroomsl_types_swr/src/edroomsl_types.d" -MT"edroomsl_types_swr/src/edroomsl_types.d" -o "edroomsl_types_swr/src/edroomsl_types.o" "../edroomsl_types_swr/src/edroomsl_types.cpp"
-../edroomsl_types_swr/src/edroomsl_types.cpp:1:35: warning: public/edroomsl_types.h: No such file or directory
-../edroomsl_types_swr/src/edroomsl_types.cpp:4: `TEDROOMUInt64' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:4: `input' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:4: `TEDROOMUInt64' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:4: `output' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:5: variable or field `TEDROOMUInt64_Serialize' declared void
-../edroomsl_types_swr/src/edroomsl_types.cpp:5: initializer list being treated as compound expression
-../edroomsl_types_swr/src/edroomsl_types.cpp:5: syntax error before `{' token
-../edroomsl_types_swr/src/edroomsl_types.cpp:9: `TEDROOMUInt64' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:9: `input' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:9: `TEDROOMUInt64' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:9: `output' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:10: variable or field `TEDROOMUInt64_Deserialize' declared void
-../edroomsl_types_swr/src/edroomsl_types.cpp:10: initializer list being treated as compound expression
-../edroomsl_types_swr/src/edroomsl_types.cpp:10: syntax error before `{' token
-../edroomsl_types_swr/src/edroomsl_types.cpp:14: `TEDROOMUInt32' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:14: `input' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:14: `TEDROOMUInt32' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:14: `output' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:15: variable or field `TEDROOMUInt32_Serialize' declared void
-../edroomsl_types_swr/src/edroomsl_types.cpp:15: initializer list being treated as compound expression
-../edroomsl_types_swr/src/edroomsl_types.cpp:15: syntax error before `{' token
-../edroomsl_types_swr/src/edroomsl_types.cpp:74: `TEDROOMUInt32' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:74: `input' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:74: `TEDROOMUInt32' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:74: `output' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:75: variable or field `TEDROOMUInt32_Deserialize' declared void
-../edroomsl_types_swr/src/edroomsl_types.cpp:75: initializer list being treated as compound expression
-../edroomsl_types_swr/src/edroomsl_types.cpp:75: syntax error before `{' token
-../edroomsl_types_swr/src/edroomsl_types.cpp:79: `TEDROOMUInt16' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:79: `input' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:79: `TEDROOMUInt16' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:79: `output' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:80: variable or field `TEDROOMUInt16_Serialize' declared void
-../edroomsl_types_swr/src/edroomsl_types.cpp:80: initializer list being treated as compound expression
-../edroomsl_types_swr/src/edroomsl_types.cpp:80: syntax error before `{' token
-../edroomsl_types_swr/src/edroomsl_types.cpp:84: `TEDROOMUInt8' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:84: `input' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:84: `TEDROOMUInt8' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:84: `output' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:85: variable or field `TEDROOMUInt8_Serialize' declared void
-../edroomsl_types_swr/src/edroomsl_types.cpp:85: initializer list being treated as compound expression
-../edroomsl_types_swr/src/edroomsl_types.cpp:85: syntax error before `{' token
-../edroomsl_types_swr/src/edroomsl_types.cpp:89: `TEDROOMUInt8' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:89: `input' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:89: `TEDROOMUInt8' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:89: `output' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:90: variable or field `TEDROOMUInt8_Deserialize' declared void
-../edroomsl_types_swr/src/edroomsl_types.cpp:90: initializer list being treated as compound expression
-../edroomsl_types_swr/src/edroomsl_types.cpp:90: syntax error before `{' token
-../edroomsl_types_swr/src/edroomsl_types.cpp:94: `TEDROOMUInt16' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:94: `input' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:94: `TEDROOMUInt16' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:94: `output' was not declared in this scope
-../edroomsl_types_swr/src/edroomsl_types.cpp:95: variable or field `TEDROOMUInt16_Deserialize' declared void
-../edroomsl_types_swr/src/edroomsl_types.cpp:95: initializer list being treated as compound expression
-../edroomsl_types_swr/src/edroomsl_types.cpp:95: syntax error before `{' token
-make: *** [edroomsl_types_swr/src/subdir.mk:20: edroomsl_types_swr/src/edroomsl_types.o] Error 1
+sparc-rtems-g++ -I/opt/rtems-4.6/sparc-rtems/leon3/lib/include -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/edroom_ej1_project/dataclasses/CDAux/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/edroom_ej1_project/components/ccconsumer/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/edroom_ej1_project/components/ccproducer/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/edroom_ej1_project/components/example1/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/edroom_ej1_project/config/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/edroom_ej1_project/edroom_glue/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/edroom_ej1_project/edroombp_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/edroom_ej1_project/edroomsl_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/edroom_ej1_project/edroomsl_types_swr/include" -I"/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/edroom_ej1_project/rtems_osswr/include" -O0 -g3 -Wall -msoft-float -c -fmessage-length=0 -MMD -MP -MF"components/CCConsumer/src/CCConsumerB.d" -MT"components/CCConsumer/src/CCConsumerB.d" -o "components/CCConsumer/src/CCConsumerB.o" "../components/CCConsumer/src/CCConsumerB.cpp"
+../components/CCConsumer/src/CCConsumerB.cpp: In constructor `CCConsumer::EDROOM_CTX_Top_0::EDROOM_CTX_Top_0(CCConsumer&)':
+../components/CCConsumer/src/CCConsumerB.cpp:15: no base or member initializers given following ':'
+../components/CCConsumer/src/CCConsumerB.cpp:15: uninitialized reference member `CCConsumer::EDROOM_CTX_Top_0::EDROOMcomponent'
+../components/CCConsumer/src/CCConsumerB.cpp:15: uninitialized reference member `CCConsumer::EDROOM_CTX_Top_0::Msg'
+../components/CCConsumer/src/CCConsumerB.cpp:15: uninitialized reference member `CCConsumer::EDROOM_CTX_Top_0::MsgBack'
+../components/CCConsumer/src/CCConsumerB.cpp:15: uninitialized reference member `CCConsumer::EDROOM_CTX_Top_0::pIn'
+../components/CCConsumer/src/CCConsumerB.cpp:15: uninitialized reference member `CCConsumer::EDROOM_CTX_Top_0::Timer'
+../components/CCConsumer/src/CCConsumerB.cpp:16: no match for call to `(CCConsumer) (CCConsumer&)'
+../components/CCConsumer/src/CCConsumerB.cpp:17: `this->CCConsumer::EDROOM_CTX_Top_0::Msg' cannot be used as a function
+../components/CCConsumer/src/CCConsumerB.cpp:18: `this->CCConsumer::EDROOM_CTX_Top_0::MsgBack' cannot be used as a function
+../components/CCConsumer/src/CCConsumerB.cpp:19: no match for call to `(CEDROOMInterface) (CEDROOMInterface&)'
+../components/CCConsumer/src/CCConsumerB.cpp:20: no match for call to `(CEDROOMTimingInterface) (CEDROOMTimingInterface&)'
+../components/CCConsumer/src/CCConsumerB.cpp:22: syntax error before `}' token
+../components/CCConsumer/src/CCConsumerB.cpp: In copy constructor `CCConsumer::EDROOM_CTX_Top_0::EDROOM_CTX_Top_0(CCConsumer::EDROOM_CTX_Top_0&)':
+../components/CCConsumer/src/CCConsumerB.cpp:25: no base or member initializers given following ':'
+../components/CCConsumer/src/CCConsumerB.cpp:25: uninitialized reference member `CCConsumer::EDROOM_CTX_Top_0::EDROOMcomponent'
+../components/CCConsumer/src/CCConsumerB.cpp:25: uninitialized reference member `CCConsumer::EDROOM_CTX_Top_0::Msg'
+../components/CCConsumer/src/CCConsumerB.cpp:25: uninitialized reference member `CCConsumer::EDROOM_CTX_Top_0::MsgBack'
+../components/CCConsumer/src/CCConsumerB.cpp:25: uninitialized reference member `CCConsumer::EDROOM_CTX_Top_0::pIn'
+../components/CCConsumer/src/CCConsumerB.cpp:25: uninitialized reference member `CCConsumer::EDROOM_CTX_Top_0::Timer'
+../components/CCConsumer/src/CCConsumerB.cpp:26: no match for call to `(CCConsumer) (CCConsumer&)'
+../components/CCConsumer/src/CCConsumerB.cpp:27: `this->CCConsumer::EDROOM_CTX_Top_0::Msg' cannot be used as a function
+../components/CCConsumer/src/CCConsumerB.cpp:28: `this->CCConsumer::EDROOM_CTX_Top_0::MsgBack' cannot be used as a function
+../components/CCConsumer/src/CCConsumerB.cpp:29: no match for call to `(CEDROOMInterface) (CEDROOMInterface&)'
+../components/CCConsumer/src/CCConsumerB.cpp:30: no match for call to `(CEDROOMTimingInterface) (CEDROOMTimingInterface&)'
+../components/CCConsumer/src/CCConsumerB.cpp:33: syntax error before `}' token
+../components/CCConsumer/src/CCConsumerB.cpp: At global scope:
+../components/CCConsumer/src/CCConsumerB.cpp:38: syntax error before `{' token
+../components/CCConsumer/src/CCConsumerB.cpp:41: prototype for `bool CCConsumer::EDROOM_CTX_Top_0::EDROOMSearchContextTrans(...)' does not match any in class `CCConsumer::EDROOM_CTX_Top_0'
+/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/edroom_ej1_project/components/ccconsumer/include/public/ccconsumer_iface_v1.h:216: candidate is: bool CCConsumer::EDROOM_CTX_Top_0::EDROOMSearchContextTrans(TEDROOMTransId&)
+../components/CCConsumer/src/CCConsumerB.cpp: In member function `bool CCConsumer::EDROOM_CTX_Top_0::EDROOMSearchContextTrans(...)':
+../components/CCConsumer/src/CCConsumerB.cpp:43: syntax error before `switch'
+../components/CCConsumer/src/CCConsumerB.cpp:49: syntax error before `.' token
+../components/CCConsumer/src/CCConsumerB.cpp:50: syntax error before `.' token
+../components/CCConsumer/src/CCConsumerB.cpp: At global scope:
+../components/CCConsumer/src/CCConsumerB.cpp:128: cannot declare member function `CCConsumer::EDROOM_SUB_Top_0::EDROOM_SUB_Top_0' within `CCConsumer::EDROOM_CTX_Top_0'
+../components/CCConsumer/src/CCConsumerB.cpp:128: syntax error before `{' token
+../components/CCConsumer/src/CCConsumerB.cpp:135: cannot declare member function `CCConsumer::EDROOM_SUB_Top_0::EDROOMBehaviour' within `CCConsumer::EDROOM_CTX_Top_0'
+../components/CCConsumer/src/CCConsumerB.cpp:135: syntax error before `{' token
+../components/CCConsumer/src/CCConsumerB.cpp:141: ISO C++ forbids declaration of `edroomCurrentTrans' with no type
+../components/CCConsumer/src/CCConsumerB.cpp:141: `EDROOMIArrival' was not declared in this scope
+../components/CCConsumer/src/CCConsumerB.cpp:143: syntax error before `do'
+../components/CCConsumer/src/CCConsumerB.cpp:161: ISO C++ forbids declaration of `edroomNextState' with no type
+../components/CCConsumer/src/CCConsumerB.cpp:162: syntax error before `break'
+../components/CCConsumer/src/CCConsumerB.cpp:168: ISO C++ forbids declaration of `edroomNextState' with no type
+../components/CCConsumer/src/CCConsumerB.cpp:168: redefinition of `int edroomNextState'
+../components/CCConsumer/src/CCConsumerB.cpp:161: `int edroomNextState' previously defined here
+../components/CCConsumer/src/CCConsumerB.cpp:169: syntax error before `break'
+../components/CCConsumer/src/CCConsumerB.cpp:187: ISO C++ forbids declaration of `edroomCurrentTrans' with no type
+../components/CCConsumer/src/CCConsumerB.cpp:187: redefinition of `int edroomCurrentTrans'
+../components/CCConsumer/src/CCConsumerB.cpp:141: `int edroomCurrentTrans' previously defined here
+../components/CCConsumer/src/CCConsumerB.cpp:187: `EDROOMReadyArrival' was not declared in this scope
+../components/CCConsumer/src/CCConsumerB.cpp:188: syntax error before `break'
+../components/CCConsumer/src/CCConsumerB.cpp:198: ISO C++ forbids declaration of `edroomCurrentState' with no type
+../components/CCConsumer/src/CCConsumerB.cpp:200: syntax error before `}' token
+../components/CCConsumer/src/CCConsumerB.cpp:209: cannot declare member function `CCConsumer::EDROOM_SUB_Top_0::EDROOMInit' within `CCConsumer::EDROOM_CTX_Top_0'
+../components/CCConsumer/src/CCConsumerB.cpp:209: syntax error before `{' token
+../components/CCConsumer/src/CCConsumerB.cpp:226: cannot declare member function `CCConsumer::EDROOM_SUB_Top_0::EDROOMIArrival' within `CCConsumer::EDROOM_CTX_Top_0'
+../components/CCConsumer/src/CCConsumerB.cpp:226: syntax error before `{' token
+../components/CCConsumer/src/CCConsumerB.cpp:231: syntax error before `.' token
+../components/CCConsumer/src/CCConsumerB.cpp:232: syntax error before `.' token
+../components/CCConsumer/src/CCConsumerB.cpp:248: cannot declare member function `CCConsumer::EDROOM_SUB_Top_0::EDROOMReadyArrival' within `CCConsumer::EDROOM_CTX_Top_0'
+../components/CCConsumer/src/CCConsumerB.cpp:248: syntax error before `{' token
+../components/CCConsumer/src/CCConsumerB.cpp:252: redefinition of `bool edroomValidMsg'
+../components/CCConsumer/src/CCConsumerB.cpp:41: `bool edroomValidMsg' previously defined here
+../components/CCConsumer/src/CCConsumerB.cpp:254: syntax error before `do'
+../components/CCConsumer/src/CCConsumerB.cpp:269: syntax error before `.' token
+../components/CCConsumer/src/CCConsumerB.cpp:270: ISO C++ forbids declaration of `edroomValidMsg' with no type
+../components/CCConsumer/src/CCConsumerB.cpp:270: conflicting types for `int edroomValidMsg'
+../components/CCConsumer/src/CCConsumerB.cpp:252: previous declaration as `bool edroomValidMsg'
+../components/CCConsumer/src/CCConsumerB.cpp:271: syntax error before `}' token
+../components/CCConsumer/src/CCConsumerB.cpp:300: cannot declare member function `CCConsumer::EDROOM_SUB_Top_0::EDROOMSubEstado2Arrival' within `CCConsumer::EDROOM_CTX_Top_0'
+../components/CCConsumer/src/CCConsumerB.cpp:300: syntax error before `{' token
+../components/CCConsumer/src/CCConsumerB.cpp:304: conflicting types for `bool edroomValidMsg'
+../components/CCConsumer/src/CCConsumerB.cpp:270: previous declaration as `int edroomValidMsg'
+../components/CCConsumer/src/CCConsumerB.cpp:306: syntax error before `do'
+../components/CCConsumer/src/CCConsumerB.cpp:321: syntax error before `.' token
+../components/CCConsumer/src/CCConsumerB.cpp:322: ISO C++ forbids declaration of `edroomValidMsg' with no type
+../components/CCConsumer/src/CCConsumerB.cpp:322: conflicting types for `int edroomValidMsg'
+../components/CCConsumer/src/CCConsumerB.cpp:304: previous declaration as `bool edroomValidMsg'
+../components/CCConsumer/src/CCConsumerB.cpp:323: syntax error before `}' token
+make: *** [components/CCConsumer/src/subdir.mk:23: components/CCConsumer/src/CCConsumerB.o] Error 1
 
-00:28:56 Build Finished (took 162ms)
+20:15:53 Build Finished (took 157ms)
 

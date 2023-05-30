@@ -1,9 +1,0 @@
-dataclass CDPath{
-
-
-
-	uri := iface.cdpath_iface;
-	version := v1;
-
-
-};

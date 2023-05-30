@@ -14,11 +14,6 @@ void MainWait(CCServer   &comp2,
 					CCClient   &comp5,
 					CCClient   &comp6){
  
-
-
-
-
-
 	Pr_Time waitTime(3, 0);
  
 #ifdef _EDROOM_SYSTEM_CLOSE
@@ -177,7 +172,7 @@ TEDROOMSignal CEDROOMSystemCommSAP::C4Client2_PpSerReq__C2Server_PpService2(TEDR
  
 }
  
-TEDROOMSignal CEDROOMSystemCommSAP::C2Server_PpService1__C3Client1_PpSerReq(TEDROOMSignal signalOut){
+TEDROOMSignal CEDROOMSystemCommSAP::C2Server_PpService1__C3Client_PpSerReq(TEDROOMSignal signalOut){
  
 	TEDROOMSignal signalIn;
  
@@ -194,7 +189,7 @@ TEDROOMSignal CEDROOMSystemCommSAP::C2Server_PpService1__C3Client1_PpSerReq(TEDR
  
 }
  
-TEDROOMSignal CEDROOMSystemCommSAP::C3Client1_PpSerReq__C2Server_PpService1(TEDROOMSignal signalOut){
+TEDROOMSignal CEDROOMSystemCommSAP::C3Client_PpSerReq__C2Server_PpService1(TEDROOMSignal signalOut){
  
 	TEDROOMSignal signalIn;
  
@@ -219,26 +214,26 @@ TEDROOMSignal CEDROOMSystemCommSAP::C3Client1_PpSerReq__C2Server_PpService1(TEDR
 void CEDROOMSystemCommSAP::RegisterInterfaces(){
  
 	// Register Interface for Component 2
-	m_localCommSAP.RegisterInterface(1, mp_comp2->pService4, mp_comp2, "C2.pService4");
-	m_localCommSAP.RegisterInterface(2, mp_comp2->pService3, mp_comp2, "C2.pService3");
-	m_localCommSAP.RegisterInterface(3, mp_comp2->pService2, mp_comp2, "C2.pService2");
-	m_localCommSAP.RegisterInterface(4, mp_comp2->pService1, mp_comp2, "C2.pService1");
+	m_localCommSAP.RegisterInterface(1, mp_comp2->pService4, mp_comp2);
+	m_localCommSAP.RegisterInterface(2, mp_comp2->pService3, mp_comp2);
+	m_localCommSAP.RegisterInterface(3, mp_comp2->pService2, mp_comp2);
+	m_localCommSAP.RegisterInterface(4, mp_comp2->pService1, mp_comp2);
  
 	// Register Interface for Component 3
-	m_localCommSAP.RegisterInterface(1, mp_comp3->Timer, mp_comp3, "C3.Timer");
-	m_localCommSAP.RegisterInterface(2, mp_comp3->pSerReq, mp_comp3, "C3.pSerReq");
+	m_localCommSAP.RegisterInterface(1, mp_comp3->pSerReq, mp_comp3);
+	m_localCommSAP.RegisterInterface(2, mp_comp3->Timer, mp_comp3);
  
 	// Register Interface for Component 4
-	m_localCommSAP.RegisterInterface(1, mp_comp4->Timer, mp_comp4, "C4.Timer");
-	m_localCommSAP.RegisterInterface(2, mp_comp4->pSerReq, mp_comp4, "C4.pSerReq");
+	m_localCommSAP.RegisterInterface(1, mp_comp4->pSerReq, mp_comp4);
+	m_localCommSAP.RegisterInterface(2, mp_comp4->Timer, mp_comp4);
  
 	// Register Interface for Component 5
-	m_localCommSAP.RegisterInterface(1, mp_comp5->Timer, mp_comp5, "C5.Timer");
-	m_localCommSAP.RegisterInterface(2, mp_comp5->pSerReq, mp_comp5, "C5.pSerReq");
+	m_localCommSAP.RegisterInterface(1, mp_comp5->pSerReq, mp_comp5);
+	m_localCommSAP.RegisterInterface(2, mp_comp5->Timer, mp_comp5);
  
 	// Register Interface for Component 6
-	m_localCommSAP.RegisterInterface(1, mp_comp6->Timer, mp_comp6, "C6.Timer");
-	m_localCommSAP.RegisterInterface(2, mp_comp6->pSerReq, mp_comp6, "C6.pSerReq");
+	m_localCommSAP.RegisterInterface(1, mp_comp6->pSerReq, mp_comp6);
+	m_localCommSAP.RegisterInterface(2, mp_comp6->Timer, mp_comp6);
  
 }
  
@@ -261,8 +256,8 @@ void CEDROOMSystemCommSAP::SetLocalConnections(){
 					C4Client2_PpSerReq__C2Server_PpService2);
  
 	m_localCommSAP.Connect(mp_comp2->pService1, mp_comp3->pSerReq, connections[3], 
-					C2Server_PpService1__C3Client1_PpSerReq, 
-					C3Client1_PpSerReq__C2Server_PpService1);
+					C2Server_PpService1__C3Client_PpSerReq, 
+					C3Client_PpSerReq__C2Server_PpService1);
  
 }
  
@@ -290,7 +285,6 @@ void CEDROOMSystemCommSAP::SetConnections(){
 CEDROOMSystemDeployment::CEDROOMSystemDeployment(){
  
 #ifdef CONFIG_EDROOMSL_ADD_TRACE
-	EDROOMFDeb<<"InitTrace";
 #endif
 	systemMemory.SetMemory();
  
@@ -341,7 +335,7 @@ void CEDROOMSystemDeployment::Start(){
  
 #ifdef CONFIG_EDROOMBP_DEPLOYMENT_NEED_TASK
  
-	Pr_Task MainTask(CEDROOMSystemDeployment::main_task,"MainTask",EDROOMprioMINIMUM,1024*16);
+	Pr_Task MainTask(CEDROOMSystemDeployment::main_task,EDROOMprioMINIMUM,1024*16);
  
 	kernel.Start();
  
@@ -357,10 +351,6 @@ StartComponents();
 				*mp_comp5,
 				*mp_comp6);
  
-#ifdef CONFIG_EDROOMSL_ADD_TRACE
-	EDROOMFDeb << "	EndEvent\nTraceEnd\n";
-	EDROOMFDeb.close();
-#endif
  
 #endif
  
@@ -383,10 +373,6 @@ Pr_TaskRV_t CEDROOMSystemDeployment::main_task(Pr_TaskP_t){
 				*systemDeployment.mp_comp4,
 				*systemDeployment.mp_comp5,
 				*systemDeployment.mp_comp6);
-#ifdef CONFIG_EDROOMSL_ADD_TRACE
-	EDROOMFDeb << "	EndEvent\nTraceEnd\n";
-	EDROOMFDeb.close();
-#endif
  
 }
 #endif

@@ -13,21 +13,29 @@
 // include deployment edroom components
  
 #include <public/ccproducer_iface_v1.h>
+#include <public/ccconsumer_iface_v1.h>
 // ***********************************************************************
 // class CEDROOMSystemMemory
 // ***********************************************************************
  
 class CEDROOMSystemMemory{
  
+	//!Messages Memory of component comp2
+	CEDROOMMessage	comp2Messages[10];
+	bool	comp2MessagesMarks[10];
+	CEDROOMQueue::CQueueNode	comp2QueueNodes[10];
+	bool	comp2QueueNodesMarks[10];
+ 
 	//!Messages Memory of component comp3
 	CEDROOMMessage	comp3Messages[10];
 	bool	comp3MessagesMarks[10];
-	CEDROOMQueue::CQueueNode	comp3QueueNodes[10];
-	bool	comp3QueueNodesMarks[10];
+	CEDROOMQueue::CQueueNode	comp3QueueNodes[13];
+	bool	comp3QueueNodesMarks[13];
  
 	public:
  
-	CCProducer::CEDROOMMemory comp3Memory;
+	CCProducer::CEDROOMMemory comp2Memory;
+	CCConsumer::CEDROOMMemory comp3Memory;
  
 //!Set Memory
 	void SetMemory();
@@ -45,18 +53,20 @@ class CEDROOMSystemCommSAP{
  
 	CEDROOMLocalConnection connections[1];
  
-	CCProducer   * mp_comp3;
+	CCProducer   * mp_comp2;
+	CCConsumer   * mp_comp3;
  
  
 //!Set Components
  
-	void SetComponents(CCProducer   *p_comp3);
+	void SetComponents(CCProducer   *p_comp2,
+							CCConsumer   *p_comp3);
  
  
 //Signal Conversion
  
-	static TEDROOMSignal C3Producer_PPout__C2Consumer_PRecData(TEDROOMSignal signal);
-	static TEDROOMSignal C2Consumer_PRecData__C3Producer_PPout(TEDROOMSignal signal);
+	static TEDROOMSignal C2Producer_PpOut__C3Consumer_PpIn(TEDROOMSignal signal);
+	static TEDROOMSignal C3Consumer_PpIn__C2Producer_PpOut(TEDROOMSignal signal);
  
  
 //!Register Interfaces
@@ -87,14 +97,16 @@ static Pr_TaskRV_t main_task(Pr_TaskP_t);
 	CEDROOMSystemMemory   systemMemory;
 	CEDROOMSystemCommSAP  systemCommSAP;
  
-	CCProducer   * mp_comp3;
+	CCProducer   * mp_comp2;
+	CCConsumer   * mp_comp3;
  
 	public:
  
 	CEDROOMSystemDeployment();
  
 //!Deployment Configuration
-	void Config(CCProducer   *p_comp3);
+	void Config(CCProducer   *p_comp2,
+					CCConsumer   *p_comp3);
  
 //!Deployment Start
 	void Start();
@@ -103,7 +115,8 @@ static Pr_TaskRV_t main_task(Pr_TaskP_t);
 	void StartComponents();
 //!Config Components
  
-	CCProducer::CEDROOMMemory 		* GetComp3Memory(){return &systemMemory.comp3Memory;}
+	CCProducer::CEDROOMMemory 		* GetComp2Memory(){return &systemMemory.comp2Memory;}
+	CCConsumer::CEDROOMMemory 		* GetComp3Memory(){return &systemMemory.comp3Memory;}
  
 };
 #endif
