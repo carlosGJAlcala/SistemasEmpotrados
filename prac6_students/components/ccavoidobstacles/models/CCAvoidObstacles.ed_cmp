@@ -1,0 +1,305 @@
+import "../../../dataclasses/TEDROOMBool/models/TEDROOMBool.ed_dclass";
+import "../../../protocols/CPAvoidObstaclesSysCtrl/models/CPAvoidObstaclesSysCtrl.ed_prot";
+import "../../../protocols/EDROOMTimingSAP/models/EDROOMTimingSAP.ed_prot";
+import "../../../protocols/EDROOMServiceLibrary/models/EDROOMServiceLibrary.ed_prot";
+import "../../../sais/sensors_iface_v1/models/sensors_iface_v1.ed_sai";
+import "../../../sais/io_ctrl_iface_v1/models/io_ctrl_iface_v1.ed_sai";
+import "../../../sais/actuators_iface_v1/models/actuators_iface_v1.ed_sai";
+
+
+
+/**
+ * \class   CCAvoidObstacles
+ *
+ */
+
+
+reactive component CCAvoidObstacles{
+
+	uri := es.uah.aut.srg.edroom.mclev.cmp.CCAvoidObstacles;
+	version := v1;
+	stack_size := 1024;
+	def_max_nb_messages := 10;
+	requires := sensors_iface(v1),
+			io_ctrl_iface(v1),
+			actuators_iface(v1);
+
+
+
+
+	structure {
+
+		ports {
+
+
+			system port EDROOMsl
+			{
+				id:= 0;
+				protocol:= EDROOMServiceLibrary(v1);
+			};
+			external port AvoidObstaclesSysCtrl {
+				id := 1;
+				cardinality := 1;
+				protocol := CPAvoidObstaclesSysCtrl(v1);
+
+			};
+
+			timing port Timer {
+				id := 2;
+				protocol := EDROOMTimingSAP(v1);
+
+			};
+
+
+
+		};
+
+
+	};
+
+
+	behaviour {
+
+		contexts {
+
+
+			context Top_0{
+
+
+				id := 0;
+
+
+				variables {
+					variable VObsDetected{
+					 class := TEDROOMBool(v1);
+
+					 constructor := "";
+					 dimension := 0;
+					};
+
+
+				};
+
+
+				states {
+					state I{
+						id := 0;
+					};
+					state Idle{
+						id := 1;
+					};
+					state Ready{
+						id := 2;
+
+						entry actions := FProgNextDetection;
+					};
+				};
+
+
+				init state := I;
+
+
+				guards{
+
+					/**
+					 * \brief  
+					 */
+
+					guard GObsDetected {
+						<code>
+						return (VObsDetected);
+
+
+						</code>
+
+					};
+
+
+				};
+
+
+				items{
+					/**
+					 * \brief  
+					 */
+
+					action FCheckObstacles {
+						<code>
+						io_ctrl_check_obstacles();
+						VObsDetected=sensors_check_obstacles();
+
+
+						</code>
+
+					};
+
+					/**
+					 * \brief  
+					 */
+
+					reply FConfigOk {
+						code {
+							<code>
+
+
+							</code>
+						};
+
+						message :=CPAvoidObstaclesSysCtrl(v1)::SConfigOK;
+
+					};
+
+					/**
+					 * \brief  
+					 */
+
+					send FHandleObstacle {
+						code {
+							<code>
+							io_ctrl_detect_obstacle();
+							actuators_halt();
+
+
+							</code>
+						};
+
+						port :=AvoidObstaclesSysCtrl;
+
+						message :=CPAvoidObstaclesSysCtrl(v1)::SObstacleDetected;
+
+						priority :=3;
+
+					};
+
+					/**
+					 * \brief  
+					 */
+
+					inform in FProgNextDetection {
+						code {
+							<code>
+							
+								 
+								interval = Pr_Time(0,50000); // interval of X sec + Y microsec
+								 
+
+
+							</code>
+						};
+
+						port :=Timer;
+
+						priority :=3;
+
+					};
+
+
+				};
+
+
+				choice points{
+					choice point CheckObstacles{
+
+
+						id := 0;
+
+
+						branches{
+
+							branch CheckObstacles_ObstDetected{
+								id := 0;
+								sink := Ready;
+
+
+								sends := FHandleObstacle;
+
+								guard := GObsDetected;
+
+							};
+
+
+						};
+
+						default branch CheckObstacles_NoObstacle{
+							id := 1;
+							sink := Ready;
+
+						};
+					};
+				};
+
+
+				transitions{
+
+					transition Init{
+						id := 0;
+						source := I;
+						sink := Idle;
+
+
+
+						asynchronous trigger {
+							port := EDROOMsl;
+							message := EDROOMServiceLibrary(v1)::EDROOMStart;
+						};
+					};
+
+					transition Start{
+						id := 1;
+						source := Idle;
+						sink := Ready;
+
+
+
+						asynchronous trigger {
+							port := AvoidObstaclesSysCtrl;
+							message := CPAvoidObstaclesSysCtrl(v1)::SStart;
+						};
+					};
+
+					transition Config{
+						id := 2;
+						source := Idle;
+						sink := Idle;
+
+
+						reply := FConfigOk;
+
+
+						synchronous trigger {
+							port := AvoidObstaclesSysCtrl;
+							message := CPAvoidObstaclesSysCtrl(v1)::SConfigAO;
+						};
+					};
+
+					transition CheckObstacles{
+						id := 3;
+						source := Ready;
+						sink := CheckObstacles;
+
+
+						actions := FCheckObstacles;
+
+
+						asynchronous trigger {
+							port := Timer;
+							message := EDROOMTimingSAP(v1)::EDROOMSignalTimeout;
+						};
+					};
+
+
+				};
+
+
+			};
+
+
+		};
+
+		top context := Top_0;
+
+
+	};
+
+
+};

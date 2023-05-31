@@ -1,0 +1,35 @@
+[Version Protocolo]
+9
+0
+1
+0
+18
+1
+EDROOMprioVeryHigh
+1
+EDROOMVar IRQ18='X';
+1
+1
+0
+1
+actuators_halt();
+1
+0
+10
+0
+1
+1
+[Version Mensaje]
+1
+[Version Senal]
+0
+EDROOMIRQsignal
+[Version Dato]
+1
+TEDROOMByte
+Z:\home\carlos\OneDrive\3anyo\2cuatri\SistemasEmpotrados\workspace\Prac6_2_Vehicle\Prac6_2_Vehicle\
+es.uah.aut.srg.edroom.mclev.data_sai.TEDROOMByte
+v1
+0
+0
+0

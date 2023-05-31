@@ -10,16 +10,17 @@
 	<section name="ExternalProjectImportWizard">
 		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
-		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/basura/Practicas_SE-master/prac6_1/prac6_students"/>
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+			<item value="/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_2_eclipse_project.zip"/>
+			<item value="/home/carlos/OneDrive/3anyo/2cuatri/SistemasEmpotrados/workspace/prac6_1_eclipse_project.zip"/>
 			<item value="/home/carlos/Descargas/edroom_ej2_eclipse_project.zip"/>
 			<item value="/home/carlos/Descargas/prac6_2_eclipse_project(1).zip"/>
-			<item value="/home/carlos/Descargas/prac6_1_eclipse_project.zip"/>
-			<item value="/home/carlos/Descargas/edroom_ej1_eclipse_project.zip"/>
-			<item value="/home/carlos/Escritorio/edroom_ej1_eclipse_project.zip"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">

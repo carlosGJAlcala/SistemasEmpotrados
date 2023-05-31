@@ -1630,7 +1630,7 @@
 <definedSymbol symbol="__STDC_ISO_10646__=201706L"/>
 </collector>
 </instance>
-<instance id="cdt.managedbuild.config.rcc.exe.release.64792336;cdt.managedbuild.config.rcc.exe.release.64792336.;cdt.managedbuild.tool.rcc.c.compiler.exe.release.663846799;cdt.managedbuild.tool.base.c.compiler.input.c.1632802736">
+<instance id="cdt.managedbuild.config.rcc.exe.release.64792336;cdt.managedbuild.config.rcc.exe.release.64792336.;cdt.managedbuild.tool.rcc.c.compiler.exe.release.663846799;cdt.managedbuild.tool.base.c.compiler.input.asm.1427844400">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 <includePath path="/usr/local/include"/>
@@ -2005,7 +2005,7 @@
 <definedSymbol symbol="__STDC_ISO_10646__=201706L"/>
 </collector>
 </instance>
-<instance id="cdt.managedbuild.config.rcc.exe.release.64792336;cdt.managedbuild.config.rcc.exe.release.64792336.;cdt.managedbuild.tool.rcc.c.compiler.exe.release.663846799;cdt.managedbuild.tool.base.c.compiler.input.asm.1427844400">
+<instance id="cdt.managedbuild.config.rcc.exe.release.64792336;cdt.managedbuild.config.rcc.exe.release.64792336.;cdt.managedbuild.tool.rcc.c.compiler.exe.release.663846799;cdt.managedbuild.tool.base.c.compiler.input.c.1632802736">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 <includePath path="/usr/local/include"/>

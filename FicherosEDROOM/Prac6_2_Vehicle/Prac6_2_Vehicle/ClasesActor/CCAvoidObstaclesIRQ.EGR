@@ -1,0 +1,330 @@
+[Version Actor SW]
+5
+0
+0
+0
+0
+[Modificado]
+1
+1
+0
+[Estructura]
+[Version Estructura]
+3
+[Parametro]
+NULL
+ 
+ 
+[FinParametro]
+[Stack]
+1
+[FinStack]
+[Puertos]
+2
+[Version Puerto]
+0
+SensorIRQ
+0
+1
+1
+[Version Grafico Puerto]
+0
+12
+33
+CPSensorIRQ
+[Version Puerto]
+0
+AvoidObstaclesSysCtrl
+0
+1
+0
+[Version Grafico Puerto]
+0
+30
+5
+CPAvoidObstaclesSysCtrl
+[FinPuertos]
+[ActoresComponente]
+0
+[FinActoresComponente]
+[Uniones]
+0
+[FinUniones]
+[NumTimers]
+0
+[FinNumTimers]
+[NumMsgDef]
+10
+[FinNumMsgDef]
+[FinEstructura]
+[Comportamiento]
+[Version Comportamiento]
+3
+0
+[Pools]
+0
+[Modulos]
+4
+[Version Modulo]
+1
+sensors_iface
+ 
+v1
+ 
+1
+1
+[Version Modulo]
+1
+actuators_iface
+ 
+v1
+ 
+1
+1
+[Version Modulo]
+1
+io_ctrl_iface
+ 
+v1
+ 
+1
+1
+[Version Modulo]
+1
+bprint_iface
+ 
+v1
+ 
+1
+1
+[Eventos]
+1
+[Event]
+[Version]
+1
+EvIRQSensorIRQ
+External
+[Maquina de Estados]
+[Version Maquina de Estados]
+1
+Top
+NULL
+[Subestados]
+3
+[Version SubEstados]
+3
+I
+;
+;
+;
+;
+;
+0
+0
+[ObjetoGrafico]
+[Version Objeto Grafico]
+0
+94 149 55 55
+[FinObjetoGrafico]
+Idle
+;
+;
+;
+;
+;
+1
+0
+[ObjetoGrafico]
+[Version Objeto Grafico]
+0
+220 194 90 60
+[FinObjetoGrafico]
+Ready
+;
+;
+;
+;
+;
+1
+0
+[ObjetoGrafico]
+[Version Objeto Grafico]
+0
+219 357 90 60
+[FinObjetoGrafico]
+[PuntosEleccion]
+0
+[Version PuntosEleccion]
+2
+[Transiciones]
+4
+[Version Transicion]
+5
+Init
+I
+OSubEstI
+Idle
+DSubEst
+Finit();
+[Trigger]
+EDROOMsl
+EDROOMStart
+true
+ 
+ 
+ 
+;
+;
+;
+0
+;
+[GraficoTransicion]
+[Version GraficoTransicion]
+0
+148 176 220 214 0
+[FinGraficoTransicion]
+Config
+Idle
+OSubEst
+Idle
+DSubEst
+;
+[Trigger]
+AvoidObstaclesSysCtrl
+SConfigAO
+true
+ 
+ 
+ 
+;
+;
+FConfigOK();
+1
+;
+[GraficoTransicion]
+[Version GraficoTransicion]
+0
+247 194 292 194 4
+[FinGraficoTransicion]
+Start
+Idle
+OSubEst
+Ready
+DSubEst
+;
+[Trigger]
+AvoidObstaclesSysCtrl
+SStart
+true
+ 
+ 
+ 
+;
+;
+;
+0
+;
+[GraficoTransicion]
+[Version GraficoTransicion]
+0
+241 254 252 357 0
+[FinGraficoTransicion]
+HandleObstacle
+Ready
+OSubEst
+Ready
+DSubEst
+;
+[Trigger]
+SensorIRQ
+EDROOMIRQsignal
+true
+ 
+ 
+ 
+FHandleIRQ();
+FHandleObstacle();
+;
+0
+;
+[GraficoTransicion]
+[Version GraficoTransicion]
+0
+309 367 309 407 7
+[FinGraficoTransicion]
+[VariablesConstantes]
+1
+[Version VariYConst]
+0
+VObsDetected
+TEDROOMByte
+
+Variable
+0
+[Metodos]
+4
+[Version Metodos]
+21
+ReplyMsg
+FConfigOK()
+0
+0
+0
+0
+1
+ 
+0
+[ServiceRequest]
+Msg->reply
+AvoidObstaclesSysCtrl
+SConfigOK
+NULL
+EDROOMprioVeryHigh
+MsgDataHandler
+FHandleIRQ()
+0
+0
+0
+0
+1
+ 
+2
+ 
+VObsDetected =varEDROOMIRQsignal;
+[ServiceRequest]
+Msg->data
+SensorIRQ
+EDROOMIRQsignal
+TEDROOMByte
+EDROOMprioNormal
+SendMsg
+FHandleObstacle()
+0
+0
+0
+0
+1
+ 
+1
+io_ctrl_detect_obstacle(VObsDetected);
+[ServiceRequest]
+send
+AvoidObstaclesSysCtrl
+SObstacleDetected
+NULL
+EDROOMprioNormal
+BasicAction
+Finit()
+0
+0
+0
+0
+1
+ 
+1
+SensorIRQ.InstallHandler();
+[MaquinasSubEstados]
+0
+[FinMaquinasSubEstados]
+[Fin Maquina de Estados]
+[FinComportamiento]
